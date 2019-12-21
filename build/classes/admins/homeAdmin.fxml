@@ -1,0 +1,639 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.validation.DoubleValidator?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<StackPane fx:id="tabpan" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="681.0" prefWidth="1098.0" stylesheets="@../styleCss/homeAdmin.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="admins.HomeAdminController">
+    <children>
+        <JFXTabPane>
+            <tabs>
+                <Tab text="Home">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                            <children>
+                                <ImageView fitHeight="88.0" fitWidth="1098.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../img/navbarAdmin.PNG" />
+                                    </image>
+                                </ImageView>
+                                <HBox fx:id="boxLogOut" layoutX="948.0" layoutY="11.0" onMouseClicked="#logOut" prefHeight="65.0" prefWidth="135.0" styleClass="hover" stylesheets="@../styleCss/homeResCommercial.css">
+                                    <children>
+                                        <ImageView fitHeight="26.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../img/Exit%20-%2002.png" />
+                                            </image>
+                                            <HBox.margin>
+                                                <Insets bottom="5.0" left="5.0" right="5.0" top="19.0" />
+                                            </HBox.margin>
+                                        </ImageView>
+                                        <Text fill="WHITE" onMouseClicked="#logOut" strokeType="OUTSIDE" strokeWidth="0.0" text="Exit">
+                                            <font>
+                                                <Font name="System Bold" size="22.0" />
+                                            </font>
+                                            <HBox.margin>
+                                                <Insets left="5.0" top="15.0" />
+                                            </HBox.margin>
+                                        </Text>
+                                    </children>
+                                </HBox>
+                                <Text fill="WHITE" layoutX="17.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HOME">
+                                    <font>
+                                        <Font name="System Bold" size="42.0" />
+                                    </font>
+                                </Text>
+                                <Circle fx:id="imgUser1" fill="WHITE" layoutX="679.0" layoutY="40.0" radius="24.0" stroke="#a89f9f" strokeType="INSIDE" strokeWidth="3.0" />
+                                <Text fx:id="flName1" fill="WHITE" layoutX="733.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="188.05078125">
+                                    <font>
+                                        <Font name="System Bold" size="18.0" />
+                                    </font>
+                                </Text>
+                                <Circle fill="#00ff66" layoutX="689.0" layoutY="56.0" radius="5.0" stroke="#1eff00" strokeType="INSIDE" />
+                        <JFXButton fx:id="ref" layoutX="938.0" layoutY="175.0" onAction="#refresh" prefHeight="47.0" prefWidth="139.0" style="-fx-background-color: #3196AF;" text="Refresh" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="17.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton layoutX="938.0" layoutY="109.0" onAction="#insert" prefHeight="47.0" prefWidth="139.0" style="-fx-background-color: rgb(17, 158, 132);" text="ADD User" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="17.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton buttonType="RAISED" layoutX="990.0" layoutY="573.0" onAction="#help" style="-fx-background-color: rgba(22, 102, 155, 1);" text="help ?" textFill="WHITE" />
+                        <ScrollPane fx:id="scroll" layoutX="23.0" layoutY="106.0" prefHeight="515.0" prefWidth="886.0">
+                           <content>
+                              <VBox fx:id="containner" prefHeight="509.0" prefWidth="878.0" />
+                           </content>
+                        </ScrollPane>
+                        <ImageView fitHeight="221.0" fitWidth="191.0" layoutX="906.0" layoutY="280.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/blue-add-list-512.png" />
+                           </image>
+                        </ImageView>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                <Tab text="Balance">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                            <children>
+                                <ImageView fitHeight="88.0" fitWidth="1098.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../img/navbarAdmin.PNG" />
+                                    </image>
+                                </ImageView>
+                                <HBox fx:id="boxLogOut" layoutX="948.0" layoutY="11.0" onMouseClicked="#logOut" prefHeight="65.0" prefWidth="135.0" styleClass="hover" stylesheets="@../styleCss/homeResCommercial.css">
+                                    <children>
+                                        <ImageView fitHeight="26.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../img/Exit%20-%2002.png" />
+                                            </image>
+                                            <HBox.margin>
+                                                <Insets bottom="5.0" left="5.0" right="5.0" top="19.0" />
+                                            </HBox.margin>
+                                        </ImageView>
+                                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Exit">
+                                            <font>
+                                                <Font name="System Bold" size="22.0" />
+                                            </font>
+                                            <HBox.margin>
+                                                <Insets left="5.0" top="15.0" />
+                                            </HBox.margin>
+                                        </Text>
+                                    </children>
+                                </HBox>
+                                <Text fill="WHITE" layoutX="15.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Balance">
+                                    <font>
+                                        <Font name="System Bold" size="43.0" />
+                                    </font>
+                                </Text>
+                                <Circle fx:id="imgUser2" fill="WHITE" layoutX="665.0" layoutY="42.0" radius="24.0" stroke="#a89f9f" strokeType="INSIDE" strokeWidth="3.0" />
+                                <Text fx:id="flName2" fill="WHITE" layoutX="719.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="188.05078125">
+                                    <font>
+                                        <Font name="System Bold" size="18.0" />
+                                    </font>
+                                </Text>
+                                <Circle fill="#00ff66" layoutX="675.0" layoutY="58.0" radius="5.0" stroke="#1eff00" strokeType="INSIDE" />
+                        <Pane layoutX="67.0" layoutY="120.0" prefHeight="214.0" prefWidth="369.0" style="-fx-background-color: #01A05E; -fx-background-radius: 0 65 0 65;" stylesheets="@../styleCss/homeAdmin.css">
+                           <children>
+                                      <Label fx:id="balance" alignment="CENTER" layoutX="15.0" layoutY="112.0" prefHeight="47.0" prefWidth="330.0" text="454544" textAlignment="CENTER" textFill="WHITE">
+                                          <font>
+                                              <Font name="System Bold" size="32.0" />
+                                          </font>
+                                      </Label>
+                              <ImageView fitHeight="97.0" fitWidth="118.0" layoutX="134.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/gdfgnh.png" />
+                                 </image>
+                              </ImageView>
+                              <Text fill="WHITE" layoutX="123.0" layoutY="195.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Balance" wrappingWidth="125.0">
+                                 <font>
+                                    <Font name="System Bold" size="33.0" />
+                                 </font>
+                              </Text>
+                           </children></Pane>
+                        <Pane layoutX="496.0" layoutY="120.0" prefHeight="214.0" prefWidth="369.0" style="-fx-background-color: #FF0062; -fx-background-radius: 65 0 65 0;" stylesheets="@../styleCss/homeAdmin.css">
+                           <children>
+                                      <Label fx:id="revenue" alignment="CENTER" layoutX="31.0" layoutY="111.0" prefHeight="40.0" prefWidth="308.0" text="545455" textFill="WHITE">
+                                          <font>
+                                              <Font name="System Bold" size="32.0" />
+                                          </font>
+                                      </Label>
+                              <ImageView fitHeight="97.0" fitWidth="118.0" layoutX="135.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/bgnn.png" />
+                                 </image>
+                              </ImageView>
+                              <Text fill="WHITE" layoutX="70.0" layoutY="194.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Revenue" wrappingWidth="233.0">
+                                 <font>
+                                    <Font name="System Bold" size="33.0" />
+                                 </font>
+                              </Text>
+                           </children></Pane>
+                        <Text fill="#b2b2b2" layoutX="907.0" layoutY="465.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$" wrappingWidth="81.75">
+                           <font>
+                              <Font name="System Bold" size="340.0" />
+                           </font>
+                        </Text>
+                        <Pane layoutX="500.0" layoutY="383.0" prefHeight="214.0" prefWidth="369.0" style="-fx-background-color: #8F3F7E; -fx-background-radius: 65 0 65 0;">
+                           <children>
+                                      <Label fx:id="pKind" alignment="CENTER" layoutX="18.0" layoutY="107.0" prefHeight="57.0" prefWidth="308.0" text="112122" textFill="WHITE">
+                                          <font>
+                                              <Font name="System Bold" size="32.0" />
+                                          </font>
+                                      </Label>
+                              <ImageView fitHeight="97.0" fitWidth="118.0" layoutX="129.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/fdddd.png" />
+                                 </image>
+                              </ImageView>
+                              <Text fill="WHITE" layoutX="65.0" layoutY="193.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Product Kind" wrappingWidth="245.00001680850983">
+                                 <font>
+                                    <Font name="System Bold" size="33.0" />
+                                 </font>
+                              </Text>
+                           </children></Pane>
+                        <Pane layoutX="67.0" layoutY="383.0" prefHeight="214.0" prefWidth="369.0" style="-fx-background-color: #16669B; -fx-background-radius: 0 65 0 65;">
+                           <children>
+                                      <Label fx:id="credit" alignment="CENTER" layoutX="29.0" layoutY="108.0" prefHeight="49.0" prefWidth="308.0" text="111212" textFill="WHITE">
+                                          <font>
+                                              <Font name="System Bold" size="32.0" />
+                                          </font>
+                                      </Label>
+                              <ImageView fitHeight="97.0" fitWidth="118.0" layoutX="133.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/logo_sersanti.png" />
+                                 </image>
+                              </ImageView>
+                              <Text fill="WHITE" layoutX="93.0" layoutY="193.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Credit " wrappingWidth="198.00001680850983">
+                                 <font>
+                                    <Font name="System Bold" size="33.0" />
+                                 </font>
+                              </Text>
+                           </children></Pane>
+                        <JFXButton buttonType="RAISED" focusTraversable="false" layoutX="966.0" layoutY="98.0" onMouseClicked="#refreshBalance" text="Refresh">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </JFXButton>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                <Tab text="Show Sales">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                            <children>
+                                <ImageView fitHeight="88.0" fitWidth="1098.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../img/navbarAdmin.PNG" />
+                                    </image>
+                                </ImageView>
+                                <HBox fx:id="boxLogOut" layoutX="948.0" layoutY="11.0" onMouseClicked="#logOut" prefHeight="65.0" prefWidth="135.0" styleClass="hover" stylesheets="@../styleCss/homeResCommercial.css">
+                                    <children>
+                                        <ImageView fitHeight="26.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../img/Exit%20-%2002.png" />
+                                            </image>
+                                            <HBox.margin>
+                                                <Insets bottom="5.0" left="5.0" right="5.0" top="19.0" />
+                                            </HBox.margin>
+                                        </ImageView>
+                                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Exit">
+                                            <font>
+                                                <Font name="System Bold" size="22.0" />
+                                            </font>
+                                            <HBox.margin>
+                                                <Insets left="5.0" top="15.0" />
+                                            </HBox.margin>
+                                        </Text>
+                                    </children>
+                                </HBox>
+                                <Text fill="WHITE" layoutX="15.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Show Sales">
+                                    <font>
+                                        <Font name="System Bold" size="43.0" />
+                                    </font>
+                                </Text>
+                                <Circle fx:id="imgUser4" fill="WHITE" layoutX="665.0" layoutY="42.0" radius="24.0" stroke="#a89f9f" strokeType="INSIDE" strokeWidth="3.0" />
+                                <Text fx:id="flName4" fill="WHITE" layoutX="719.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="188.05078125">
+                                    <font>
+                                        <Font name="System Bold" size="18.0" />
+                                    </font>
+                                </Text>
+                                <Circle fill="#00ff66" layoutX="675.0" layoutY="58.0" radius="5.0" stroke="#1eff00" strokeType="INSIDE" />
+                                <TableView fx:id="tabView" layoutX="27.0" layoutY="176.0" prefHeight="457.0" prefWidth="709.0">
+                                    <columns>
+                                        <TableColumn fx:id="product" prefWidth="90.0" text="Products" />
+                                        <TableColumn fx:id="quantity" prefWidth="111.0" text="Quantity S.P" />
+                                        <TableColumn fx:id="price" prefWidth="123.0" text="Price S.P (DA)" />
+                                        <TableColumn fx:id="revenue1" prefWidth="110.0" text="Revenue" />
+                                        <TableColumn fx:id="dateS" prefWidth="130.0" text="Date Sellng" />
+                                        <TableColumn fx:id="cashier" prefWidth="143.0" text="cashier" />
+                                    </columns>
+                                </TableView>
+                                <JFXTextField fx:id="search1" labelFloat="true" layoutX="27.0" layoutY="119.0" onMouseClicked="#search1" prefHeight="25.0" prefWidth="212.0" promptText="Search" style="-fx-prompt-text-fill: #999;">
+                                    <font>
+                                        <Font name="System Bold" size="16.0" />
+                                    </font>
+                                </JFXTextField>
+                                <ImageView fitHeight="385.0" fitWidth="415.0" layoutX="766.0" layoutY="261.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../img/Achat-en-ligne-Pays-Bas-Consuwijzer1.png" />
+                                    </image>
+                                </ImageView>
+                                <JFXButton layoutX="940.0" layoutY="105.0" onAction="#login" prefHeight="51.0" prefWidth="122.0" style="-fx-background-color: rgb(17, 158, 132);" text="Selling" textFill="WHITE">
+                                    <font>
+                                        <Font name="System Bold" size="20.0" />
+                                    </font>
+                                </JFXButton>
+                        <JFXButton buttonType="RAISED" focusTraversable="false" layoutX="670.0" layoutY="123.0" onMouseClicked="#refreshSales" text="Refresh">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </JFXButton>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                <Tab text="Message">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                            <children>
+                                <ImageView fitHeight="88.0" fitWidth="1098.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../img/navbarAdmin.PNG" />
+                                    </image>
+                                </ImageView>
+                                <HBox fx:id="boxLogOut" layoutX="948.0" layoutY="11.0" onMouseClicked="#logOut" prefHeight="65.0" prefWidth="135.0" styleClass="hover" stylesheets="@../styleCss/homeResCommercial.css">
+                                    <children>
+                                        <ImageView fitHeight="26.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../img/Exit%20-%2002.png" />
+                                            </image>
+                                            <HBox.margin>
+                                                <Insets bottom="5.0" left="5.0" right="5.0" top="19.0" />
+                                            </HBox.margin>
+                                        </ImageView>
+                                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Exit">
+                                            <font>
+                                                <Font name="System Bold" size="22.0" />
+                                            </font>
+                                            <HBox.margin>
+                                                <Insets left="5.0" top="15.0" />
+                                            </HBox.margin>
+                                        </Text>
+                                    </children>
+                                </HBox>
+                                <Text fill="WHITE" layoutX="15.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Message">
+                                    <font>
+                                        <Font name="System Bold" size="43.0" />
+                                    </font>
+                                </Text>
+                                <Circle fx:id="imgUser5" fill="WHITE" layoutX="665.0" layoutY="42.0" radius="24.0" stroke="#a89f9f" strokeType="INSIDE" strokeWidth="3.0" />
+                                <Text fx:id="flName5" fill="WHITE" layoutX="719.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="188.05078125">
+                                    <font>
+                                        <Font name="System Bold" size="18.0" />
+                                    </font>
+                                </Text>
+                                <Circle fill="#00ff66" layoutX="675.0" layoutY="58.0" radius="5.0" stroke="#1eff00" strokeType="INSIDE" />
+                        
+                                <HBox layoutY="82.0" prefHeight="578.0" prefWidth="1098.0">
+                                    <children>
+                                        <AnchorPane id="AnchorPane" prefHeight="578.0" prefWidth="818.0">
+                                            <children>
+                                                <Pane layoutX="31.0" layoutY="483.0" prefHeight="67.0" prefWidth="705.0" style="-fx-background-color: #fff; -fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5);" AnchorPane.rightAnchor="30.0">
+                                                    <children>
+                                                        <MaterialDesignIconView glyphName="SEND" layoutX="640.0" layoutY="46.0" onMouseClicked="#sendMessage" size="40">
+                                                            <cursor>
+                                                                <Cursor fx:constant="HAND" />
+                                                            </cursor>   
+                                                        </MaterialDesignIconView>
+                                                        <MaterialDesignIconView fill="#242a31" glyphName="PAPERCLIP" layoutX="68.0" layoutY="46.0" onMouseClicked="#fileChooser" rotate="45.0" size="40" text="" wrappingWidth="39.99999925031443">
+                                                            <cursor>
+                                                                <Cursor fx:constant="HAND" />
+                                                            </cursor>
+                                                        </MaterialDesignIconView>
+                                                        <MaterialDesignIconView fill="#242a31" glyphName="IMAGE" layoutX="119.0" layoutY="46.0" onMouseClicked="#imageChooser" size="40" wrappingWidth="39.99999925031443">
+                                                            <cursor>
+                                                                <Cursor fx:constant="HAND" />
+                                                            </cursor>
+                                                        </MaterialDesignIconView>
+                                                        <MaterialDesignIconView fill="#242a31" glyphName="CAMERA" layoutX="22.0" layoutY="46.0" size="40" wrappingWidth="39.99999925031443">
+                                                            <cursor>
+                                                                <Cursor fx:constant="HAND" />
+                                                            </cursor>
+                                                        </MaterialDesignIconView>
+                                                        <JFXTextArea fx:id="msgEntred" layoutX="207.0" layoutY="5.0" prefHeight="46.0" prefWidth="404.0" promptText="Enter Your Text" wrapText="true">
+                                                            <font>
+                                                                <Font size="18.0" />
+                                                            </font>
+                                                        </JFXTextArea>
+                                                    </children>
+                                                </Pane>
+                                                <Pane layoutX="15.0" layoutY="7.0" prefHeight="458.0" prefWidth="748.0" style="-fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5); -fx-background-color: #fff;" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="7.0">
+                                                    <children>
+                                                        <ScrollPane fx:id="scrollPaneMessageBox" hbarPolicy="NEVER" layoutX="13.0" layoutY="55.0" prefHeight="370.0" prefWidth="719.0" vvalue="1.0" AnchorPane.bottomAnchor="3.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="-3.0" AnchorPane.topAnchor="3.0" VBox.vgrow="ALWAYS">
+                                                            <content>
+                                                                <VBox fx:id="messageBox" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="365.0" prefWidth="722.0" spacing="20.0" style="-fx-background-color: #e2e2e2;" styleClass="right-box-center">
+                                                                    <padding>
+                                                                        <Insets bottom="40.0" left="20.0" right="20.0" top="40.0" />
+                                                                    </padding>
+                                                                </VBox>
+                                                            </content>
+                                                        </ScrollPane>
+                                                        <MaterialDesignIconView fill="#242a31" glyphName="STAR" layoutX="510.0" layoutY="43.0" size="40">
+                                                            <cursor>
+                                                                <Cursor fx:constant="HAND" />
+                                                            </cursor>
+                                                        </MaterialDesignIconView>
+                                                        <MaterialDesignIconView fill="#242a31" glyphName="PHONE" layoutX="594.0" layoutY="43.0" size="40">
+                                                            <cursor>
+                                                                <Cursor fx:constant="HAND" />
+                                                            </cursor>
+                                                        </MaterialDesignIconView>
+                                                        <Text fx:id="SendedName" fill="#797878" layoutX="20.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0">
+                                                            <font>
+                                                                <Font name="System Bold" size="24.0" />
+                                                            </font>
+                                                        </Text>
+                                                        <Label fx:id="typeU" layoutX="293.0" layoutY="17.0" prefHeight="33.0" prefWidth="208.0" textFill="#8d8a8a">
+                                                            <font>
+                                                                <Font size="14.0" />
+                                                            </font>
+                                                        </Label>
+                                                        <MaterialDesignIconView fill="#242a31" glyphName="VIDEO" layoutX="680.0" layoutY="42.0" size="40">
+                                                            <cursor>
+                                                                <Cursor fx:constant="HAND" />
+                                                            </cursor>
+                                                        </MaterialDesignIconView>
+                                                    </children>
+                                                </Pane>
+
+                                            </children>
+                                    
+                                        </AnchorPane>
+                                        
+                                        <VBox prefHeight="578.0" prefWidth="361.0" styleClass="left-box" stylesheets="@../styleCss/chat.css">
+                                            <children>
+                                                <HBox alignment="CENTER" minHeight="80.0" prefHeight="80.0" prefWidth="200.0">
+                                                    <children>
+                                                        <JFXTextField fx:id="searchMsg" onKeyReleased="#searchMsg" styleClass="search-field" stylesheets="@../styleCss/chat.css" />
+                                                    </children>
+                                                </HBox>
+                                                <Line endX="308.0" stroke="#363d45" strokeWidth="2.5" />
+          
+                                                <HBox prefHeight="89.0" prefWidth="311.0">
+                                                    <children>
+                                                        <VBox alignment="CENTER" prefHeight="75.0" prefWidth="104.0" spacing="1.0" styleClass="type-contact">
+                                                            <children>
+                                                                <FontAwesomeIconView fill="#cccccc" glyphName="USER" size="33" />
+                                                            </children>
+                                                        </VBox>
+                                                        <Line startY="70.0" stroke="#363d45" />
+                                                        <VBox alignment="CENTER" prefHeight="75.0" prefWidth="104.0" spacing="1.0" styleClass="type-contact">
+                                                            <children>
+                                                                <FontAwesomeIconView fill="#cccccc" glyphName="GROUP" size="33" />
+                                                            </children>
+                                                        </VBox>
+                                                        <Line startY="70.0" stroke="#363d45" />
+                                                        <VBox alignment="CENTER" prefHeight="75.0" prefWidth="104.0" spacing="1.0" styleClass="type-contact">
+                                                            <children>
+                                                                <FontAwesomeIconView fill="#cccccc" glyphName="USER_PLUS" size="33" />
+                                                            </children>
+                                                        </VBox>
+                                                    </children>
+                                                </HBox>
+                                                <Line endX="308.0" stroke="#363d45" strokeWidth="2.5" />  
+                                                <AnchorPane prefHeight="368.0" prefWidth="321.0" VBox.vgrow="ALWAYS">
+                                                    <children>
+                                                        <ScrollPane fx:id="newContactBox" hbarPolicy="NEVER" layoutX="10.0" layoutY="10.0" prefHeight="504.0" prefWidth="377.0" styleClass="scroll-pane-contact" visible="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                            <content>
+                                                                <VBox fx:id="container" maxHeight="1.7976931348623157E308" minHeight="460.0" prefWidth="375.0" style="-fx-background-color: #242A31;">
+                                                                    <children>
+                                                                        <Line endX="300.0" nodeOrientation="LEFT_TO_RIGHT" stroke="#363d45" strokeWidth="2.5" />
+                                                                    </children>
+                                                                </VBox>
+                                                            </content>
+                                                        </ScrollPane>
+                                                    </children>
+                                                </AnchorPane>                                   
+                                            </children>
+                                        </VBox>
+
+                                
+                                    </children>
+                                </HBox>
+                        
+                        
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                <Tab text="Providers">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                            <children>
+                                <ImageView fitHeight="88.0" fitWidth="1098.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../img/navbarAdmin.PNG" />
+                                    </image>
+                                </ImageView>
+                                <HBox fx:id="boxLogOut" layoutX="948.0" layoutY="11.0" onMouseClicked="#logOut" prefHeight="65.0" prefWidth="135.0" styleClass="hover" stylesheets="@../styleCss/homeResCommercial.css">
+                                    <children>
+                                        <ImageView fitHeight="26.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../img/Exit%20-%2002.png" />
+                                            </image>
+                                            <HBox.margin>
+                                                <Insets bottom="5.0" left="5.0" right="5.0" top="19.0" />
+                                            </HBox.margin>
+                                        </ImageView>
+                                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Exit">
+                                            <font>
+                                                <Font name="System Bold" size="22.0" />
+                                            </font>
+                                            <HBox.margin>
+                                                <Insets left="5.0" top="15.0" />
+                                            </HBox.margin>
+                                        </Text>
+                                    </children>
+                                </HBox>
+                                <Text fill="WHITE" layoutX="15.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Providers">
+                                    <font>
+                                        <Font name="System Bold" size="43.0" />
+                                    </font>
+                                </Text>
+                                <Circle fx:id="imgUser6" fill="WHITE" layoutX="665.0" layoutY="42.0" radius="24.0" stroke="#a89f9f" strokeType="INSIDE" strokeWidth="3.0" />
+                                <Text fx:id="flName6" fill="WHITE" layoutX="719.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="188.05078125">
+                                    <font>
+                                        <Font name="System Bold" size="18.0" />
+                                    </font>
+                                </Text>
+                                <Circle fill="#00ff66" layoutX="675.0" layoutY="58.0" radius="5.0" stroke="#1eff00" strokeType="INSIDE" />
+                                <AnchorPane layoutX="35.0" layoutY="93.0" prefHeight="534.0" prefWidth="366.0" style="-fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5); -fx-background-color: #fff;">
+                                    <children>
+                                        <Rectangle fx:id="imgFourniseur" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="226.0" layoutX="40.0" layoutY="23.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="287.0" />
+                                        <Label fx:id="nameProvider" layoutX="29.0" layoutY="233.0" textFill="#8a8080">
+                                            <font>
+                                                <Font name="System Bold" size="21.0" />
+                                            </font>
+                                        </Label>
+                                        <VBox layoutX="36.0" layoutY="280.0" prefHeight="184.0" prefWidth="207.0">
+                                            <children>
+                                                <Label fx:id="location" prefHeight="29.0" prefWidth="207.0" textFill="#6a7d9a">
+                                                    <font>
+                                                        <Font size="15.0" />
+                                                    </font>
+                                                    <graphic>
+                                                        <MaterialDesignIconView fill="#7387a8" glyphName="MAP_MARKER" size="17" />
+                                                    </graphic>
+                                                    <VBox.margin>
+                                                        <Insets top="5.0" />
+                                                    </VBox.margin>
+                                                </Label>
+                                                <Label fx:id="nameCategory" prefHeight="29.0" prefWidth="207.0" textFill="#6a7d9a">
+                                                    <font>
+                                                        <Font size="15.0" />
+                                                    </font>
+                                                    <graphic>
+                                                        <MaterialDesignIconView fill="#7387a8" glyphName="SHOPPING" size="17" />
+                                                    </graphic>
+                                                    <VBox.margin>
+                                                        <Insets top="5.0" />
+                                                    </VBox.margin>
+                                                </Label>
+                                                <Label fx:id="email" prefHeight="29.0" prefWidth="207.0" textFill="#6a7d9a">
+                                                    <font>
+                                                        <Font size="15.0" />
+                                                    </font>
+                                                    <graphic>
+                                                        <MaterialDesignIconView fill="#7387a8" glyphName="LAUNCH" size="17" />
+                                                    </graphic>
+                                                    <VBox.margin>
+                                                        <Insets top="5.0" />
+                                                    </VBox.margin>
+                                                </Label>
+                                                <Label fx:id="phone" prefHeight="29.0" prefWidth="207.0" textFill="#6a7d9a">
+                                                    <font>
+                                                        <Font size="15.0" />
+                                                    </font>
+                                                    <graphic>
+                                                        <MaterialDesignIconView fill="#7387a8" glyphName="MAP_MARKER" size="17" />
+                                                    </graphic>
+                                                    <VBox.margin>
+                                                        <Insets top="5.0" />
+                                                    </VBox.margin>
+                                                </Label>
+                                                <Label prefHeight="29.0" prefWidth="207.0" text="2017/2019" textFill="#6a7d9a">
+                                                    <font>
+                                                        <Font size="15.0" />
+                                                    </font>
+                                                    <graphic>
+                                                        <MaterialDesignIconView fill="#7387a8" glyphName="SHOPPING" size="17" />
+                                                    </graphic>
+                                                    <VBox.margin>
+                                                        <Insets top="5.0" />
+                                                    </VBox.margin>
+                                                </Label>
+                                            </children>
+                                        </VBox>
+                                        <Separator layoutX="46.0" layoutY="487.0" prefHeight="3.0" prefWidth="282.0" />
+                                        <Text fill="#ff9898" layoutX="31.0" layoutY="516.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Crédit :">
+                                            <font>
+                                                <Font name="System Bold" size="17.0" />
+                                            </font>
+                                        </Text>
+                                        <Label fx:id="cridé" layoutX="142.0" layoutY="494.0" textFill="#ee6d6d">
+                                            <font>
+                                                <Font name="System Bold Italic" size="22.0" />
+                                            </font>
+                                        </Label>
+                              <Label layoutX="307.0" layoutY="494.0" prefHeight="32.0" prefWidth="42.0" text="DA" textFill="#ee6d6d">
+                                 <font>
+                                    <Font size="22.0" />
+                                 </font>
+                              </Label>
+                                    </children>
+                                </AnchorPane>
+                                <DoubleValidator />
+                                <TableView fx:id="tabViewPro" layoutX="437.0" layoutY="164.0" onMouseClicked="#getDataFromTable" prefHeight="373.0" prefWidth="564.0">
+                                    <columns>
+                                        <TableColumn fx:id="idPro" prefWidth="75.0" text="ID" />
+                                        <TableColumn fx:id="firstnameT" prefWidth="151.0" text="Firstname" />
+                                        <TableColumn fx:id="lastnameT" prefWidth="147.0" text="Lastname" />
+                                        <TableColumn fx:id="categoryT" prefWidth="183.0" text="Category" />
+                              <TableColumn fx:id="cridéT" prefWidth="183.0" />
+                              <TableColumn fx:id="emailT" prefWidth="183.0" />
+                              <TableColumn fx:id="locationT" prefWidth="183.0" />
+                              <TableColumn fx:id="noteT" prefWidth="183.0" />
+                              <TableColumn fx:id="phoneT" prefWidth="183.0" />
+                                    </columns>
+                                </TableView>
+                                <JFXTextField fx:id="searchProv" labelFloat="true" layoutX="437.0" layoutY="104.0" onMouseClicked="#search" prefHeight="25.0" prefWidth="173.0" promptText="Search ..." style="-fx-prompt-text-fill: #999;">
+                                    <font>
+                                        <Font size="18.0" />
+                                    </font>
+                                </JFXTextField>
+                                <JFXButton layoutX="859.0" layoutY="572.0" onAction="#showOrders" style="-fx-background-color: #26B99A;" text="Show All Orders" textFill="WHITE">
+                                    <font>
+                                        <Font name="System Bold" size="16.0" />
+                                    </font>
+                                </JFXButton>
+                        <JFXButton buttonType="RAISED" focusTraversable="false" layoutX="922.0" layoutY="109.0" onMouseClicked="#refreshProv" text="Refresh">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </JFXButton>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+            </tabs>
+        </JFXTabPane>
+    </children>
+</StackPane>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="addCategPlatform" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="responsableComercial.AddCategController">
+   <children>
+      <ImageView fitHeight="294.0" fitWidth="200.0" layoutX="367.0" layoutY="91.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Achat-en-ligne-Pays-Bas-Consuwijzer1.png" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="categName" focusColor="#119e84" labelFloat="true" layoutX="68.0" layoutY="110.0" prefHeight="25.0" prefWidth="178.0" promptText="Category Name">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="chefName" focusColor="#119e84" labelFloat="true" layoutX="68.0" layoutY="239.0" prefHeight="25.0" prefWidth="178.0" promptText="Chef Name">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </JFXTextField>
+      <JFXComboBox fx:id="status" focusColor="#119e84" labelFloat="true" layoutX="68.0" layoutY="173.0" prefHeight="25.0" prefWidth="178.0" promptText="Status" style="-fx-font-size: 13px;" />
+      <Text fill="#867878" layoutX="199.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Category">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Text>
+      <JFXButton buttonType="RAISED" layoutX="173.0" layoutY="331.0" onAction="#addCategory" prefHeight="25.0" prefWidth="73.0" style="-fx-background-color: rgb(17, 158, 132);" text="Add" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXButton>
+   </children>
+   <effect>
+      <DropShadow radius="24.085" width="77.34" />
+   </effect>
+</AnchorPane>

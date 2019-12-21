@@ -1,0 +1,90 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.login {
+    -fx-background-image: url(../img/login.png);
+    
+}
+.barLogin{
+    -fx-background-color:  #903FAF;
+}
+.jfx-snackbar-content {
+    -fx-background-color: #F00;
+    -fx-pref-width: 310;
+    
+}
+.jfx-snackbar-toast {
+    -fx-text-fill: #FFF;
+    -fx-font-weight:bold;
+    -fx-font-size: 15px;
+    -fx-font-family: Tahoma
+}
+.textFP{
+    -fx-text-fill: #000;
+    -fx-prompt-text-fill: #999;
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+}
+.peneLogin{
+    -fx-border-color :  #903FAF;
+    -fx-border-width: 3px;
+    -fx-border-radius: 50px;
+    -fx-background-color: #fff;
+    -fx-background-radius: 50px;
+}
+
+.mainFxmlClass {
+    -fx-background-image: url(../src/banner-img4.jpg);
+}
+.ColorCirclAdmin{
+        -fx-background-color:  rgb(140, 69, 172);   
+        -fx-text-fill: #fff;
+        -fx-effect :  dropshadow(gaussian, rgb(0, 0.0, 0.0, 0.9), 20, 0.1, 3,7);
+}
+.ColorCirclAdmin:hover{
+        -fx-background-color:  rgba(140, 69, 172,0.2);
+        -fx-text-fill: #020304;
+        -fx-pref-width:175px;
+        -fx-pref-height: 175px;
+        -fx-effect :  dropshadow(gaussian, rgb(0, 0.0, 0.0, 0.9), 20, 0.1, 3,7);
+}
+.ColorCirclDoctor{
+        -fx-background-color:  rgb(17, 158, 132); 
+        -fx-text-fill: #fff;
+        -fx-effect :  dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.9), 20, 0.1, 3,7);
+}
+.ColorCirclDoctor:hover{
+        -fx-background-color:  rgba(17, 158, 132,0.2); 
+        -fx-text-fill: #020304;
+        -fx-pref-width:175px;
+        -fx-pref-height: 175px;
+        -fx-effect :  dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.9), 20, 0.1, 3,7);
+}
+.ColorCirclNurse{
+        -fx-background-color:  rgb(170, 50, 100);  
+        -fx-text-fill: #fff;
+        -fx-effect :  dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.9), 20, 0.1, 3,7);
+}
+.ColorCirclNurse:hover{
+        -fx-background-color:   rgba(170, 50, 100,0.2);
+        -fx-text-fill: #020304;
+        -fx-pref-width:175px;
+        -fx-pref-height: 175px;
+        -fx-effect :  dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.9), 20, 0.1, 3,7);
+}
+.ColorCirclReception{
+        -fx-background-color:  rgba(78, 106, 156, 1);     
+        -fx-text-fill: #fff;
+        -fx-effect :  dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.9), 20, 0.1, 3,7);
+}
+.ColorCirclReception:hover{
+        -fx-background-color:  rgba(78, 106, 156, 0.2); 
+        -fx-text-fill: #020304;
+        -fx-pref-width:175px;
+        -fx-pref-height: 175px;
+        -fx-effect :  dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.9), 20, 0.1, 3,7);
+}
+.image{
+    -fx-border-radius: 500px;
+}

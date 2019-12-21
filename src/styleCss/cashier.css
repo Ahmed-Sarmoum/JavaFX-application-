@@ -1,0 +1,24 @@
+.border:hover{
+    
+    -fx-border-color: #0fbcf0;
+    -fx-border-width: 0px 0px 0px 4px;
+    -fx-background-color:  #3196AF;
+    -fx-text-fill: #fff;
+    -fx-cursor: hand
+}
+
+.hand{
+    -fx-cursor: hand;
+}
+.list{
+    -fx-background-color : #fff
+}
+.list:hover{
+    -fx-background-color:  #ccc;
+    -fx-cursor: hand;
+}
+.list:pressed{
+    -fx-background-color:   #3196AF;
+    -fx-cursor: hand;
+}
+

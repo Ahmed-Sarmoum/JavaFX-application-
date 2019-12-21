@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="statisticPlatform" prefHeight="604.0" prefWidth="1132.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="responsableStock.StatisticResStockPlatformController">
+   <children>
+      <BarChart fx:id="barChart" layoutX="14.0" layoutY="85.0" prefHeight="503.0" prefWidth="799.0">
+         <xAxis>
+            <CategoryAxis side="BOTTOM" />
+         </xAxis>
+         <yAxis>
+            <NumberAxis side="LEFT" />
+         </yAxis>
+      </BarChart>
+      <Text fill="#404040" layoutX="48.0" layoutY="56.0" opacity="0.31" strokeType="OUTSIDE" strokeWidth="0.0" text="Quantity Statistic" wrappingWidth="428.748046875">
+         <font>
+            <Font name="System Bold" size="45.0" />
+         </font>
+      </Text>
+      <Pane layoutX="837.0" layoutY="23.0" prefHeight="314.0" prefWidth="281.0" style="-fx-border-color: #000;">
+         <children>
+            <Text fill="#aea5a5" layoutX="27.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Filter ...">
+               <font>
+                  <Font name="System Bold" size="29.0" />
+               </font>
+            </Text>
+            <JFXComboBox fx:id="catégCombo" labelFloat="true" layoutX="13.0" layoutY="90.0" onAction="#shosedProdectFromCategory" prefHeight="39.0" prefWidth="257.0" promptText="Category" style="-fx-font-size: 18px;">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXComboBox>
+            <JFXComboBox fx:id="prodCombo" labelFloat="true" layoutX="13.0" layoutY="204.0" onAction="#showStatistic" prefHeight="39.0" prefWidth="257.0" promptText="Prodects" style="-fx-font-size: 18px;">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXComboBox>
+         </children>
+      </Pane>
+      <ImageView fitHeight="237.0" fitWidth="289.0" layoutX="867.0" layoutY="353.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/10-512.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

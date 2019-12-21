@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="addPane2" prefHeight="539.0" prefWidth="462.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="responsableStock.AddQuantityController">
+   <children>
+      <Pane layoutY="-12.0" prefHeight="199.0" prefWidth="421.0" style="-fx-background-color: #186A9A;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-12.0">
+         <children>
+            <ImageView fitHeight="129.0" fitWidth="133.0" layoutX="165.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/bgnn.png" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="146.0" layoutY="172.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Quantity">
+               <font>
+                  <Font name="System Bold" size="27.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <JFXButton fx:id="addBtn" alignment="CENTER" cache="true" layoutX="150.0" layoutY="481.0" onMouseClicked="#addQuantity" prefHeight="44.0" prefWidth="161.0" ripplerFill="#f5f2f2" style="-fx-background-color: #186A9A; -fx-background-radius: 20;" text="Add" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <Separator layoutX="14.0" layoutY="463.0" opacity="0.53" prefHeight="3.0" prefWidth="433.0" style="-fx-background-color: #888;" />
+      <JFXComboBox fx:id="comboProd" focusColor="#186a9a" labelFloat="true" layoutX="25.0" layoutY="234.0" prefHeight="39.0" prefWidth="194.0" promptText="Products" style="-fx-font-size: 18px;" />
+      <JFXTextField fx:id="rq" alignment="CENTER" focusColor="#186a9a" labelFloat="true" layoutX="14.0" layoutY="374.0" prefHeight="39.0" prefWidth="194.0" promptText="Rayon Quantity">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="sq" alignment="CENTER" focusColor="#186a9a" labelFloat="true" layoutX="248.0" layoutY="234.0" prefHeight="39.0" prefWidth="194.0" promptText="Stock Quntity">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXDatePicker fx:id="dateD" defaultColor="#186a9a" layoutX="254.0" layoutY="307.0" prefHeight="38.0" prefWidth="194.0" promptText="Start Date " style="-fx-font-size: 17px; -fx-prompt-text-fill: #999;" />
+      <JFXDatePicker fx:id="dateF" defaultColor="#186a9a" layoutX="256.0" layoutY="380.0" prefHeight="38.0" prefWidth="194.0" promptText="Dead Date" style="-fx-prompt-text-fill: #999; -fx-font-size: 17px;" />
+   </children>
+</AnchorPane>

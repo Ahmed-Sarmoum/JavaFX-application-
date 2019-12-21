@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="inserPane" prefHeight="564.0" prefWidth="653.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="admins.AddUpdateUserController">
+   <children>
+      <JFXTextField fx:id="firstnameT" focusColor="#40a84b" labelFloat="true" layoutX="24.0" layoutY="91.0" prefHeight="37.0" prefWidth="206.0" promptText="First Name ..." style="-fx-font-size: 16px; -fx-font-weight: bold; -fx-prompt-text-fill: #999;" />
+      <JFXTextField fx:id="lastnameT" focusColor="#40a84b" labelFloat="true" layoutX="370.0" layoutY="26.0" prefHeight="37.0" prefWidth="206.0" promptText="Last Name ..." style="-fx-font-size: 16px; -fx-font-weight: bold; -fx-prompt-text-fill: #999;" />
+      <JFXTextField fx:id="usernameT" focusColor="#40a84b" labelFloat="true" layoutX="24.0" layoutY="175.0" prefHeight="36.0" prefWidth="206.0" promptText="Username ..." style="-fx-font-size: 16px; -fx-font-weight: bold; -fx-prompt-text-fill: #999;" />
+      <JFXTextField fx:id="passwordT" focusColor="#40a84b" labelFloat="true" layoutX="370.0" layoutY="106.0" prefHeight="36.0" prefWidth="206.0" promptText="Password ..." style="-fx-font-size: 16px; -fx-font-weight: bold; -fx-prompt-text-fill: #999;" />
+      <JFXTextField fx:id="phone" focusColor="#40a84b" labelFloat="true" layoutX="24.0" layoutY="257.0" prefHeight="36.0" prefWidth="206.0" promptText="N° Phone ..." style="-fx-font-size: 16px; -fx-font-weight: bold; -fx-prompt-text-fill: #999;" />
+      <JFXComboBox fx:id="combo" focusColor="#40a841" labelFloat="true" layoutX="370.0" layoutY="198.0" prefHeight="36.0" prefWidth="206.0" promptText="Type ..." style="-fx-font-size: 16px; -fx-font-weight: bold; -fx-prompt-text-fill: #999;" />
+      <JFXTextField fx:id="adress" focusColor="#40a84b" labelFloat="true" layoutX="24.0" layoutY="334.0" prefHeight="36.0" prefWidth="206.0" promptText="Adress ..." style="-fx-font-size: 16px; -fx-font-weight: bold; -fx-prompt-text-fill: #999;" />
+      <JFXDatePicker fx:id="age" defaultColor="#40a841" layoutX="24.0" layoutY="424.0" opacity="0.62" overLay="true" prefHeight="37.0" prefWidth="206.0" promptText="Birth Date ..." style="-fx-font-size: 16px; -fx-prompt-text-fill: #999; -fx-font-weight: bold;" />
+      <JFXButton fx:id="insert" layoutX="31.0" layoutY="504.0" onMouseClicked="#insert" prefHeight="35.0" prefWidth="119.0" style="-fx-background-color: rgb(17, 158, 132);" text="Insert" textFill="#fcfcfc">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </JFXButton>
+      <ImageView fx:id="imageCan" fitHeight="199.0" fitWidth="213.0" layoutX="363.0" layoutY="271.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/gdfgnh1.png" />
+         </image>
+      </ImageView>
+      <JFXButton layoutX="465.0" layoutY="504.0" onAction="#LoadPhoto" prefHeight="35.0" prefWidth="119.0" style="-fx-background-color: #3196AF;" text="Choose Img" textFill="#fcfcfc">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </JFXButton>
+      <Text fill="#686868" layoutX="10.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add New Users" wrappingWidth="303.00000154972076">
+         <font>
+            <Font name="System Bold" size="41.0" />
+         </font>
+      </Text>
+      <Label fx:id="age1" layoutX="186.0" layoutY="503.0" prefHeight="29.0" prefWidth="143.0" visible="false">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="typeed" layoutX="258.0" layoutY="496.0" prefHeight="30.0" prefWidth="103.0" visible="false" />
+   </children>
+</AnchorPane>

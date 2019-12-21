@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" fx:id="updateQuantityGeneral" prefHeight="216.0" prefWidth="424.0" style="-fx-background-color: #fff;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.141" fx:controller="responsableStock.UpdateQuentityGeneralController">
+   <children>
+      <JFXComboBox fx:id="comboProd" focusColor="#119e84" labelFloat="true" layoutX="14.0" layoutY="25.0" prefHeight="39.0" prefWidth="175.0" promptText="Products" style="-fx-font-size: 18px;" />
+      <JFXTextField fx:id="qMofR" focusColor="#119e84" labelFloat="true" layoutX="14.0" layoutY="98.0" prefHeight="39.0" prefWidth="175.0" promptText="Quantity Min Of Rayon">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="qMofS" focusColor="#119e84" labelFloat="true" layoutX="237.0" layoutY="25.0" prefHeight="39.0" prefWidth="167.0" promptText="Quntity Min Of Stock">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="qMax" focusColor="#119e84" labelFloat="true" layoutX="237.0" layoutY="97.0" prefHeight="39.0" prefWidth="167.0" promptText="Quantity Max">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="updateBtn" alignment="CENTER" cache="true" layoutX="132.0" layoutY="164.0" onMouseClicked="#updateQG" prefHeight="44.0" prefWidth="161.0" ripplerFill="#f5f2f2" style="-fx-background-color: rgb(17, 158, 132); -fx-background-radius: 20;" text="Update" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

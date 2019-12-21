@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<StackPane fx:id="prodectContainer" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="660.0" prefWidth="1068.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="responsableComercial.ProduitPlatformController">
+   <children>
+      <AnchorPane id="AnchorPane" prefHeight="660.0" prefWidth="1068.0" style="-fx-background-color: #fff;" stylesheets="@../styleCss/homeAdmin.css">
+         <children>
+            <TableView fx:id="tabView" layoutX="26.0" layoutY="88.0" onMouseClicked="#showData" prefHeight="548.0" prefWidth="777.0">
+               <columns>
+                  <TableColumn fx:id="idP" prefWidth="47.0" text="ID" />
+                  <TableColumn fx:id="nameP" prefWidth="133.0" text="Name Prodects" />
+                  <TableColumn fx:id="descP" prefWidth="124.0" text="Description" />
+                  <TableColumn fx:id="priceP" prefWidth="69.0" text="Price" />
+                  <TableColumn fx:id="pricePInit" prefWidth="103.0" text="Price Initial" />
+                  <TableColumn fx:id="categoryP" prefWidth="120.0" text="Category" />
+                  <TableColumn fx:id="rayonP" prefWidth="72.0" text="Rayon" />
+                  <TableColumn fx:id="quntP" prefWidth="108.0" text="Quntité" />
+               </columns>
+            </TableView>
+            <JFXButton layoutX="815.0" layoutY="100.0" onAction="#addProdect" prefHeight="37.0" prefWidth="79.0" style="-fx-background-color: rgb(17, 158, 132);" text="Add" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="894.0" layoutY="100.0" onAction="#UpdateProdect" prefHeight="37.0" prefWidth="79.0" style="-fx-background-color: #3196AF;" text="Update" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="972.0" layoutY="100.0" onAction="#deleteProdect" prefHeight="37.0" prefWidth="79.0" style="-fx-background-color: rgb(170, 50, 100);" text="Delete" textFill="#f8f8f8">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXTextField fx:id="search" labelFloat="true" layoutX="815.0" layoutY="44.0" onMouseClicked="#search" prefHeight="38.0" prefWidth="232.0" promptText="Search ...">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </JFXTextField>
+            <Pane disable="true" layoutX="814.0" layoutY="163.0" prefHeight="474.0" prefWidth="245.0" style="-fx-border-color: #999;">
+               <children>
+                  <Text layoutX="34.0" layoutY="27.0" opacity="0.55" strokeType="OUTSIDE" strokeWidth="0.0" text="Information Prodect">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
+                  <JFXTextField fx:id="Tname" labelFloat="true" layoutX="55.0" layoutY="51.0" promptText="Name...">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font></JFXTextField>
+                  <JFXTextField fx:id="Tprice" labelFloat="true" layoutX="55.0" layoutY="235.0" promptText="Price...">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font></JFXTextField>
+                  <JFXTextField fx:id="Tcateg" labelFloat="true" layoutX="56.0" layoutY="385.0" promptText="Category...">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font></JFXTextField>
+                  <JFXTextField fx:id="Trayon" labelFloat="true" layoutX="55.0" layoutY="432.0" promptText="Rayon...">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font></JFXTextField>
+                  <JFXTextArea fx:id="Tdesc" labelFloat="true" layoutX="56.0" layoutY="115.0" prefHeight="92.0" prefWidth="169.0" promptText="Description..." style="-fx-border-color: #ee; -fx-border-width: 1px;" wrapText="true">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font></JFXTextArea>
+                  <JFXTextField fx:id="Tqunt" labelFloat="true" layoutX="56.0" layoutY="338.0" promptText="Quntité...">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="TpriceInit" labelFloat="true" layoutX="56.0" layoutY="287.0" promptText="Price Initial...">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </JFXTextField>
+               </children>
+            </Pane>
+            <Text fill="#bcb1b1" layoutX="26.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Prodects Managment">
+               <font>
+                  <Font name="System Bold" size="39.0" />
+               </font>
+            </Text>
+            <JFXButton buttonType="RAISED" layoutX="697.0" layoutY="37.0" onMouseClicked="#refresh" text="Refresh" textFill="#727272">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

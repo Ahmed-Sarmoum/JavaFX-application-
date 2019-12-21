@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXProgressBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="home" prefHeight="660.0" prefWidth="1068.0" stylesheets="@../styleCss/homeResCommercial.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="responsableComercial.HomePlatformController">
+   <children>
+      <Text fx:id="alim" fill="#726f6f" layoutX="91.0" layoutY="389.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Alimentation">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Text>
+      <Pane layoutX="16.0" layoutY="154.0" prefHeight="166.0" prefWidth="255.0" style="-fx-background-color: #70D293; -fx-background-radius: 10;">
+         <children>
+            <Text fill="WHITE" layoutX="73.0" layoutY="151.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Balance" wrappingWidth="125.0">
+               <font>
+                  <Font name="System Bold" size="33.0" />
+               </font>
+            </Text>
+            <Label fx:id="balance" alignment="CENTER" layoutX="54.0" layoutY="82.0" prefHeight="30.0" prefWidth="153.0" text="0.0" textFill="#f8f8f8">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="19.0" layoutY="80.0" text="DA" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="23.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="59.0" fitWidth="65.0" layoutX="98.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/gdfgnh.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Text fill="#afb5a9" layoutX="248.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Commercial responsible Home">
+         <font>
+            <Font name="System Bold Italic" size="41.0" />
+         </font>
+      </Text>
+      <Pane layoutX="277.0" layoutY="154.0" prefHeight="166.0" prefWidth="255.0" style="-fx-background-color: #FF0062; -fx-background-radius: 10;">
+         <children>
+            <Text fill="WHITE" layoutX="17.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Revenue" wrappingWidth="233.0">
+               <font>
+                  <Font name="System Bold" size="33.0" />
+               </font>
+            </Text>
+            <Label fx:id="revenue" alignment="CENTER" layoutX="63.0" layoutY="74.0" prefHeight="30.0" prefWidth="133.0" text="0.0" textFill="#f8f8f8">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="29.0" layoutY="72.0" text="DA" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="23.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="59.0" fitWidth="65.0" layoutX="99.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/bgnn.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="540.0" layoutY="154.0" prefHeight="166.0" prefWidth="255.0" style="-fx-background-color: #2196f3; -fx-background-radius: 10;">
+         <children>
+            <Text fill="WHITE" layoutX="31.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Credit " wrappingWidth="198.00001680850983">
+               <font>
+                  <Font name="System Bold" size="33.0" />
+               </font>
+            </Text>
+            <Label fx:id="cridé" alignment="CENTER" layoutX="61.0" layoutY="73.0" prefHeight="30.0" prefWidth="139.0" text="0.0" textFill="#f8f8f8">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="26.0" layoutY="71.0" text="DA" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="23.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="58.0" fitWidth="79.0" layoutX="97.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/logo_sersanti.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="803.0" layoutY="154.0" prefHeight="166.0" prefWidth="255.0" style="-fx-background-color: #E65100; -fx-background-radius: 10;">
+         <children>
+            <Text fill="WHITE" layoutX="33.0" layoutY="144.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Product Kind" wrappingWidth="233.0">
+               <font>
+                  <Font name="System Bold" size="33.0" />
+               </font>
+            </Text>
+            <Label fx:id="pKind" alignment="CENTER" layoutX="69.0" layoutY="76.0" prefHeight="30.0" prefWidth="133.0" text="0" textFill="#f8f8f8">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="66.0" fitWidth="81.0" layoutX="110.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/fdddd.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Text fx:id="deco" fill="#726f6f" layoutX="91.0" layoutY="440.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Decoration">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Text>
+      <Text fx:id="mult" fill="#726f6f" layoutX="89.0" layoutY="495.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Multimedia">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Text>
+      <Text fx:id="beut" fill="#726f6f" layoutX="91.0" layoutY="545.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Beaute">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Text>
+      <JFXProgressBar fx:id="pAli" layoutX="275.0" layoutY="373.0" prefHeight="20.0" prefWidth="233.0" progress="0.0" style="-fx-background-color: #2196f3;" />
+      <JFXProgressBar fx:id="pDec" layoutX="273.0" layoutY="420.0" prefHeight="20.0" prefWidth="233.0" progress="0.0" />
+      <JFXProgressBar fx:id="pMul" layoutX="273.0" layoutY="470.0" prefHeight="20.0" prefWidth="233.0" progress="0.0" />
+      <JFXProgressBar fx:id="pBeaut" layoutX="273.0" layoutY="522.0" prefHeight="20.0" prefWidth="233.0" progress="0.0" />
+      <Text fx:id="mob" fill="#726f6f" layoutX="91.0" layoutY="589.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mobile">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Text>
+      <Text fx:id="electro" fill="#726f6f" layoutX="93.0" layoutY="639.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Electromenager">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Text>
+      <JFXProgressBar fx:id="pMob" layoutX="275.0" layoutY="572.0" prefHeight="20.0" prefWidth="233.0" progress="0.0" />
+      <JFXProgressBar fx:id="pElectro" layoutX="275.0" layoutY="624.0" prefHeight="20.0" prefWidth="233.0" progress="0.0" />
+      <Text fx:id="rest" fill="#726f6f" layoutX="626.0" layoutY="383.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Restoration">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Text>
+      <Text fx:id="pates" fill="#726f6f" layoutX="626.0" layoutY="434.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Patisserie">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Text>
+      <Text fx:id="brico" fill="#726f6f" layoutX="627.0" layoutY="489.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Library">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Text>
+      <Text fx:id="lois" fill="#726f6f" layoutX="629.0" layoutY="539.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tearoom">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Text>
+      <JFXProgressBar fx:id="pRes" layoutX="810.0" layoutY="367.0" prefHeight="20.0" prefWidth="233.0" progress="0.0" style="-fx-background-color: #2196f3;" />
+      <JFXProgressBar fx:id="pPat" layoutX="808.0" layoutY="414.0" prefHeight="20.0" prefWidth="233.0" progress="0.0" />
+      <JFXProgressBar fx:id="pBri" layoutX="808.0" layoutY="464.0" prefHeight="20.0" prefWidth="233.0" progress="0.0" />
+      <JFXProgressBar fx:id="pLois" layoutX="808.0" layoutY="516.0" prefHeight="20.0" prefWidth="233.0" progress="0.0" />
+      <Text fx:id="mateInfo" fill="#726f6f" layoutX="626.0" layoutY="583.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Materiel Informatic">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Text>
+      <Text fx:id="meubl" fill="#726f6f" layoutX="629.0" layoutY="633.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Meuble">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Text>
+      <JFXProgressBar fx:id="pMateInf" layoutX="810.0" layoutY="566.0" prefHeight="20.0" prefWidth="233.0" progress="0.0" />
+      <JFXProgressBar fx:id="pMeub" layoutX="810.0" layoutY="618.0" prefHeight="20.0" prefWidth="233.0" progress="0.0" />
+      <JFXButton buttonType="RAISED" focusTraversable="false" layoutX="25.0" layoutY="100.0" onMouseClicked="#refresh" text="Refresh">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

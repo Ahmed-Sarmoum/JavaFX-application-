@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<StackPane fx:id="showOrders" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="681.0" prefWidth="730.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="admins.ShowOrdersController">
+   <children>
+      <AnchorPane prefHeight="681.0" prefWidth="656.0" style="-fx-background-color: #eee;">
+         <children>
+            <ScrollPane fx:id="scroll" focusTraversable="false" layoutX="49.0" layoutY="77.0" prefHeight="594.0" prefWidth="615.0" style="-fx-background-color: #fff;">
+               <content>
+                  <VBox fx:id="container" prefHeight="582.0" prefWidth="603.0" spacing="5.0" style="-fx-background-color: #fff;" />
+               </content>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </ScrollPane>
+            <Text fill="#979797" layoutX="266.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="All Orders">
+               <font>
+                  <Font name="System Bold" size="42.0" />
+               </font>
+               <effect>
+                  <DropShadow height="6.17" radius="1.8449999999999998" width="3.21" />
+               </effect>
+            </Text>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

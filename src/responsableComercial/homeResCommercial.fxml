@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<StackPane fx:id="stackSwitch" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="713.0" prefWidth="1318.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="responsableComercial.HomeResCommercialController">
+   <children>
+      <AnchorPane prefHeight="639.0" prefWidth="1351.0" style="-fx-background-color: #fff;">
+         <children>
+            <Pane layoutX="69.0" layoutY="47.0" prefHeight="713.0" prefWidth="261.0" style="-fx-background-color: #2A3F54;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="1067.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Label fx:id="flname1" layoutX="90.0" layoutY="45.0" prefHeight="66.0" prefWidth="113.0" style="-fx-font-size: 20; -fx-text-fill: #fff; -fx-font-weight: bold;" text="SARMOUM Ahmed" wrapText="true" />
+                  <HBox layoutX="-1.0" layoutY="236.0" onMouseClicked="#categ" prefHeight="58.0" prefWidth="250.0" styleClass="hover" stylesheets="@../styleCss/homeResCommercial.css">
+                     <children>
+                        <ImageView fitHeight="31.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/200_78597_4546_thumbnail.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="10.0" top="13.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Categ &amp; Ray managment">
+                           <font>
+                              <Font name="System Bold" size="17.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="20.0" top="15.0" />
+                           </HBox.margin>
+                        </Text>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </HBox>
+                  <HBox layoutX="-1.0" layoutY="293.0" onMouseClicked="#rayon" prefHeight="58.0" prefWidth="250.0" styleClass="hover" stylesheets="@../styleCss/homeResCommercial.css">
+                     <children>
+                        <ImageView fitHeight="31.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/NaturopathicMedi.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="10.0" top="13.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Providers Profile">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="20.0" top="15.0" />
+                           </HBox.margin>
+                        </Text>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </HBox>
+                  <HBox layoutX="-1.0" layoutY="349.0" onMouseClicked="#produit" prefHeight="58.0" prefWidth="250.0" styleClass="hover" stylesheets="@../styleCss/homeResCommercial.css">
+                     <children>
+                        <ImageView fitHeight="44.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/logo_sersanti.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="10.0" top="13.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Products managment">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="20.0" top="15.0" />
+                           </HBox.margin>
+                        </Text>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </HBox>
+                  <HBox layoutX="-1.0" layoutY="406.0" onMouseClicked="#sales" prefHeight="58.0" prefWidth="250.0" styleClass="hover" stylesheets="@../styleCss/homeResCommercial.css">
+                     <children>
+                        <ImageView fitHeight="44.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/appoint.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="10.0" top="13.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Sales managment">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="20.0" top="15.0" />
+                           </HBox.margin>
+                        </Text>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </HBox>
+                  <HBox layoutX="-1.0" layoutY="465.0" onMouseClicked="#message" prefHeight="58.0" prefWidth="250.0" styleClass="hover" stylesheets="@../styleCss/homeResCommercial.css">
+                     <children>
+                        <ImageView fitHeight="37.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/bgnn.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="10.0" top="13.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Messages">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="20.0" top="15.0" />
+                           </HBox.margin>
+                        </Text>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </HBox>
+                  <HBox fx:id="boxLogOut" layoutX="-1.0" layoutY="581.0" onMouseClicked="#logOut" prefHeight="58.0" prefWidth="250.0" styleClass="hover" stylesheets="@../styleCss/homeResCommercial.css">
+                     <children>
+                        <ImageView fitHeight="44.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/Exit%20-%2002.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="10.0" top="13.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Exit">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="20.0" top="15.0" />
+                           </HBox.margin>
+                        </Text>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </HBox>
+                  <Text fill="WHITE" layoutX="102.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" layoutX="74.0" layoutY="157.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GENERAL">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Text>
+                  <Separator layoutX="24.0" layoutY="122.0" opacity="0.65" prefWidth="200.0" />
+                  <HBox layoutX="-1.0" layoutY="177.0" onMouseClicked="#home" prefHeight="58.0" prefWidth="250.0" styleClass="hover" stylesheets="@../styleCss/homeResCommercial.css">
+                     <children>
+                        <ImageView fitHeight="29.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/Home%20(2).png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="10.0" top="13.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Home page">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="20.0" top="15.0" />
+                           </HBox.margin>
+                        </Text>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </HBox>
+                  <HBox layoutX="-1.0" layoutY="523.0" onMouseClicked="#statistic" prefHeight="58.0" prefWidth="250.0" styleClass="hover" stylesheets="@../styleCss/homeResCommercial.css">
+                     <children>
+                        <ImageView fitHeight="37.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/bgnn.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="10.0" top="13.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Statistic">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="20.0" top="15.0" />
+                           </HBox.margin>
+                        </Text>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </HBox>
+                  <Separator layoutX="24.0" layoutY="655.0" opacity="0.65" prefWidth="200.0" />
+                  <ImageView fitHeight="32.0" fitWidth="30.0" layoutX="30.0" layoutY="667.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/facebook.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fitHeight="32.0" fitWidth="30.0" layoutX="81.0" layoutY="667.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/github.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fitHeight="32.0" fitWidth="30.0" layoutX="139.0" layoutY="668.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/linkedin.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fitHeight="32.0" fitWidth="30.0" layoutX="191.0" layoutY="667.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/youtube.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <Circle fx:id="imgUser2" fill="WHITE" layoutX="45.0" layoutY="60.0" radius="29.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+               </children></Pane>
+            <Pane layoutX="198.0" layoutY="-2.0" prefHeight="58.0" prefWidth="1068.0" style="-fx-background-color: #eee;" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <HBox layoutX="796.0" layoutY="2.0" prefHeight="55.0" prefWidth="271.0" style="-fx-background-color: #ddd;" stylesheets="@../styleCss/homeResCommercial.css">
+                     <children>
+                        <Circle fx:id="imgUser" fill="WHITE" radius="19.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
+                           <HBox.margin>
+                              <Insets left="4.0" top="8.0" />
+                           </HBox.margin>
+                        </Circle>
+                        <Text fx:id="flname2" fill="#464646" strokeType="OUTSIDE" strokeWidth="0.0" text="SARMOUM Ahmed">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="25.0" top="15.0" />
+                           </HBox.margin>
+                        </Text>
+                     </children>
+                  </HBox>
+                  <Text fill="#2a3f54" layoutX="176.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SuperMarket El Amir" wrappingWidth="433.88283559679985">
+                     <font>
+                        <Font name="System Bold Italic" size="39.0" />
+                     </font>
+                  </Text>
+                  <FontAwesomeIconView fill="#464646" glyphName="BELL" layoutX="703.0" layoutY="42.0" size="3em" styleClass="hand" />
+               </children></Pane>
+            <AnchorPane fx:id="switched" layoutX="260.0" layoutY="54.0" prefHeight="659.0" prefWidth="1068.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

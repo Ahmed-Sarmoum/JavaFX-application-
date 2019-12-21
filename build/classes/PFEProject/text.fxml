@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<HBox fx:id="profile" prefHeight="191.0" prefWidth="284.0" style="-fx-background-radius: 10px; -fx-border-radius: 10px; -fx-background-color: #8F3F7E;" stylesheets="@../styleCss/cashier.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1">
+   <padding>
+      <Insets top="5.0" />
+   </padding>
+   <effect>
+      <DropShadow height="10.0" radius="4.5" width="10.0" />
+   </effect>
+   <children>
+      <Pane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <Text fill="WHITE" layoutX="10.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="First Name :" />
+            <Text fill="WHITE" layoutX="10.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last Name :" />
+            <Text fill="WHITE" layoutX="10.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Type :" />
+            <Text fill="WHITE" layoutX="12.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Adress :" />
+            <Text fill="WHITE" layoutX="13.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone :" />
+            <Text fill="WHITE" layoutX="13.0" layoutY="165.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Age :" />
+         </children>
+      </Pane>
+      <VBox prefHeight="186.0" prefWidth="134.0">
+         <children>
+            <Text fill="#01a05e" strokeType="OUTSIDE" strokeWidth="0.0" text="User Info">
+               <font>
+                  <Font name="System Bold Italic" size="23.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Text>
+            <ImageView fitHeight="132.0" fitWidth="99.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/574347ddf6be999e0027de121104f2ff.png" />
+               </image>
+               <VBox.margin>
+                  <Insets top="30.0" />
+               </VBox.margin>
+            </ImageView>
+         </children>
+      </VBox>
+   </children>
+</HBox>

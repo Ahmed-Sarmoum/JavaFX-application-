@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="upDePlatform2" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="216.0" prefWidth="424.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="responsableStock.UpdateAndDelete2Controller">
+   <children>
+      <AnchorPane id="AnchorPane" prefHeight="192.0" prefWidth="396.0">
+         <children>
+            <JFXButton fx:id="deleteBtn" onMouseClicked="#deleteQuantity" prefHeight="216.0" prefWidth="218.0" style="-fx-background-color: rgb(170, 50, 100);" text="Delete" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="218.0" onMouseClicked="#updateQ" prefHeight="216.0" prefWidth="206.0" style="-fx-background-color: rgb(17, 158, 132);" text="Update" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

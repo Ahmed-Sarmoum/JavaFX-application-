@@ -1,0 +1,181 @@
+.msg-area {
+   -fx-font-size: 18px;
+}
+.msg-area .content {
+    -fx-margin: 20px
+}
+
+.msg-src {
+    -fx-text-fill: #FFF;
+    -fx-font-weight:bold 
+        
+}
+.msg-src .content {
+    -fx-background-color: #2196f3;
+    -fx-text-alignment: center
+}
+.send-msg-area {
+    -fx-font-size: 18px;
+    -fx-font-weight:bold
+}
+.left-box {
+    -fx-background-color: #242A31;
+}
+.search-field {
+    -fx-background-color: #363D45;
+    -fx-text-fill: #DDD;
+    -fx-font-size: 18px;
+    -fx-prompt-text-fill: #CCC;
+    -fx-background-radius: 18px;
+    -fx-padding: 5px 20px 5px 20px
+}
+.type-contact {
+    -fx-cursor: hand
+}
+.type-contact:hover {
+    -fx-background-color: #242A39
+}
+.scroll-pane-contact > .viewport {
+    -fx-background-color: transparent
+}
+.scroll-pane-contact {
+     -fx-background-color: #242A31;
+}
+.user-box:hover {
+    -fx-background-color: #242A39
+}
+
+.user-box1 {
+    -fx-background-color: #fff;
+    -fx-border-color:#000;
+    -fx-border-size:0.5px;
+    -fx-translate-x:10px;
+}
+.user-box0 {
+    -fx-background-color: #fff;
+    -fx-border-color:#000;
+    -fx-border-size:0.5px;
+    -fx-translate-x:30px;
+}
+.trans{
+    -fx-translate-x:15px;
+    -fx-font-family:Baskerville Old Face
+}
+.user-box1:hover {
+    -fx-background-color: #DDD;
+     -fx-font-weight: bold;
+     -fx-translate-x:10px;
+     -fx-effect :  dropshadow(gaussian, rgb(0, 0.0, 0.0, 0.5), 20, 0.1, 3,7);
+}
+.user-box1:pressed {
+    -fx-translate-x:10px;
+    -fx-background-color: #bbb;
+     -fx-font-weight: bold;
+}
+.user-box0:hover {
+    -fx-background-color: #DDD;
+     -fx-font-weight: bold;
+     -fx-translate-x:30px;
+     -fx-effect :  dropshadow(gaussian, rgb(0, 0.0, 0.0, 0.5), 20, 0.1, 3,7);
+}
+.user-box0:pressed {
+    -fx-background-color: #bbb;
+     -fx-font-weight: bold;
+     -fx-translate-x:30px;
+}
+.user-img {
+    -fx-cursor: hand;
+    -fx-alignment: CENTER_LEFT
+}
+.user-name {
+    -fx-text-fill: #DDD;
+    -fx-font-size: 16px;
+    -fx-cursor: hand
+}
+.user-name1 {
+    -fx-text-fill: #DDD;
+    -fx-font-size: 14px;
+    -fx-cursor: hand
+}
+.user-label{
+    -fx-font-size: 20px;
+    -fx-font-weight: bold italic;
+}
+.user-name2 {
+    -fx-text-fill: #000;
+    -fx-font-size: 16px;
+    -fx-cursor: hand
+}
+.user-last-msg {
+    -fx-text-fill: #BBB;
+    -fx-font-size: 15px;
+    -fx-cursor: hand
+}
+.circle{
+    -fx-margin: 10px;
+}
+.icon-open-camera:hover {
+    -fx-fill: #2196f3;
+    -fx-cursor: hand
+}
+.jfx-snackbar-content {
+    -fx-background-color: #F00;
+    -fx-pref-width: 310;
+    
+}
+.jfx-snackbar-toast {
+    -fx-text-fill: #FFF;
+    -fx-font-weight:bold;
+    -fx-font-size: 15px;
+    -fx-font-family: Tahoma
+}
+.text-id{
+    -fx-font-size: 25px;
+    -fx-font-weight: bold;
+}
+.text-name{
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-font-family:  italic;
+    -fx-margin: 10 10 0 7;
+}
+.text-name:hover{
+    -fx-text-fill: #fff;
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-font-family:  italic;
+    -fx-margin: 10 10 0 7;
+}
+.text-date{
+    -fx-font-size: 15px;
+    -fx-margin: 20 0 0 5;
+}
+.text-date:hover{
+    -fx-text-fill: #fff;
+    -fx-font-size: 15px;
+    -fx-margin: 20 0 0 5;
+}
+.text-click{
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-font-family:  italic;
+    -fx-margin: 40 0 0 0;
+}
+
+.color-container{
+    -fx-background-color: #fff;
+}
+.color-container:hover{
+    -fx-background-color: #01A05E;
+     
+}
+.color-container:pressed{
+    -fx-background-color: #fff;
+}
+.caisser-p1{
+    -fx-background-color: #eee;
+}
+.caisser-p1-text{
+    -fx-font: 20px bold Baskerville-Old-Face;
+    -fx-margin: 5px 0px 0px 0px;
+}

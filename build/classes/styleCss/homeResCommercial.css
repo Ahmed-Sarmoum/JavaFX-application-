@@ -1,0 +1,12 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.hover:hover {
+
+    -fx-background-color: #333;
+}
+.hover:pressed{
+
+    -fx-background-color:  #70D293;
+}

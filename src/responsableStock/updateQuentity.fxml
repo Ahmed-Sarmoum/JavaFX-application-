@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="updateQuantityGeneral" prefHeight="216.0" prefWidth="424.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="responsableStock.UpdateQuentityController">
+   <children>
+      <JFXButton fx:id="updateBtn" alignment="CENTER" cache="true" layoutX="132.0" layoutY="164.0" onMouseClicked="#updateQ" prefHeight="44.0" prefWidth="161.0" ripplerFill="#f5f2f2" style="-fx-background-color: rgb(17, 158, 132); -fx-background-radius: 20;" text="Update" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXComboBox fx:id="comboProd" focusColor="#186a9a" labelFloat="true" layoutX="11.0" layoutY="33.0" prefHeight="39.0" prefWidth="179.0" promptText="Products" style="-fx-font-size: 18px;" />
+      <JFXTextField fx:id="rq" alignment="CENTER" focusColor="#186a9a" labelFloat="true" layoutX="330.0" layoutY="33.0" prefHeight="39.0" prefWidth="80.0" promptText="Rayon QT">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="sq" alignment="CENTER" focusColor="#186a9a" labelFloat="true" layoutX="222.0" layoutY="33.0" prefHeight="39.0" prefWidth="80.0" promptText="Stock QT">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </JFXTextField>
+      <JFXDatePicker fx:id="dateD" defaultColor="#119e84" layoutX="55.0" layoutY="97.0" prefHeight="38.0" prefWidth="152.0" promptText="Start Date " style="-fx-font-size: 17px; -fx-prompt-text-fill: #999;" />
+      <JFXDatePicker fx:id="dateF" defaultColor="#119e84" layoutX="243.0" layoutY="97.0" prefHeight="38.0" prefWidth="152.0" promptText="Dead Date" style="-fx-prompt-text-fill: #999; -fx-font-size: 17px;" />
+   </children>
+</AnchorPane>

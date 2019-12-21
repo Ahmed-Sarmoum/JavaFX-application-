@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="listeProductPane" prefHeight="604.0" prefWidth="1132.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="responsableComercial.ListProductController">
+   <children>
+      <TableView fx:id="tabView" layoutX="36.0" layoutY="98.0" prefHeight="498.0" prefWidth="843.0" stylesheets="@../styleCss/homeAdmin.css">
+         <columns>
+            <TableColumn fx:id="idP" prefWidth="72.0" sortable="false" text="ID" />
+            <TableColumn fx:id="nameP" prefWidth="150.0" sortable="false" text="Name Prodects" />
+            <TableColumn fx:id="descP" prefWidth="157.0" sortable="false" text="Description" />
+            <TableColumn fx:id="priceP" prefWidth="117.0" sortable="false" text="Price Prodect" />
+            <TableColumn fx:id="categoryP" prefWidth="131.0" sortable="false" text="Category" />
+            <TableColumn fx:id="rayonP" prefWidth="103.0" sortable="false" text="Rayon" />
+            <TableColumn fx:id="quntP" prefWidth="112.0" sortable="false" text="Quntité" />
+         </columns>
+      </TableView>
+      <Text fill="#8d8383" layoutX="36.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Liste Products">
+         <font>
+            <Font name="System Bold" size="39.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="308.0" fitWidth="257.0" layoutX="864.0" layoutY="296.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Achat-en-ligne-Pays-Bas-Consuwijzer1.png" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="search" labelFloat="true" layoutX="901.0" layoutY="98.0" onMouseClicked="#search" prefHeight="38.0" prefWidth="231.0" promptText="Search ...">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="logout1" layoutX="959.0" layoutY="14.0" onMouseClicked="#getData" prefHeight="39.0" prefWidth="116.0" styleClass="logOut" stylesheets="@../styleCss/resStock.css" text="Refresh" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

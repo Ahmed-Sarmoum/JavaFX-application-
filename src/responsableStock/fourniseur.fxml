@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="fourniserPlatform" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="604.0" prefWidth="1132.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="responsableStock.FourniseurController">
+   <children>
+      <AnchorPane id="AnchorPane" prefHeight="604.0" prefWidth="1132.0" style="-fx-background-color: #fff;" stylesheets="@../styleCss/homeAdmin.css">
+         <children>
+            <AnchorPane layoutX="24.0" layoutY="14.0" prefHeight="577.0" prefWidth="300.0" style="-fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5); -fx-background-color: white;">
+               <children>
+                  <ImageView fitHeight="232.0" fitWidth="244.0" layoutX="30.0" layoutY="-7.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../img/avatar.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="nameProvider" layoutX="68.0" layoutY="218.0" prefHeight="29.0" prefWidth="207.0" style="-fx-font-size: 16; -fx-font-weight: bold; -fx-text-fill: #6a7d9a;" />
+                  <VBox layoutX="68.0" layoutY="269.0" prefHeight="184.0" prefWidth="207.0">
+                     <children>
+                        <Label fx:id="location2" prefHeight="29.0" prefWidth="207.0" style="-fx-font-size: 14; -fx-text-fill: #6a7d9a;">
+                           <graphic>
+                              <MaterialDesignIconView fill="#7387a8" glyphName="MAP_MARKER" size="17.0" wrappingWidth="20.666631162166595" />
+                           </graphic>
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label fx:id="nameCategory2" prefHeight="29.0" prefWidth="207.0" style="-fx-font-size: 14; -fx-text-fill: #6a7d9a;">
+                           <graphic>
+                              <MaterialDesignIconView fill="#7387a8" glyphName="SHOPPING" size="17.0" wrappingWidth="22.000005185604095" />
+                           </graphic>
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label fx:id="email" prefHeight="29.0" prefWidth="207.0" style="-fx-font-size: 14; -fx-text-fill: #6a7d9a;">
+                           <graphic>
+                              <MaterialDesignIconView fill="#7387a8" glyphName="LAUNCH" size="17.0" wrappingWidth="20.666692197322845" />
+                           </graphic>
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label fx:id="phone" prefHeight="29.0" prefWidth="207.0" style="-fx-font-size: 14; -fx-text-fill: #6a7d9a;">
+                           <graphic>
+                              <MaterialDesignIconView fill="#7387a8" glyphName="MAP_MARKER" size="17.0" wrappingWidth="20.666631162166595" />
+                           </graphic>
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label prefHeight="29.0" prefWidth="207.0" style="-fx-font-size: 14; -fx-text-fill: #6a7d9a;" text="2018/2019">
+                           <graphic>
+                              <MaterialDesignIconView fill="#7387a8" glyphName="SHOPPING" size="17.0" wrappingWidth="22.000005185604095" />
+                           </graphic>
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <JFXButton alignment="CENTER" layoutX="14.0" layoutY="527.0" onMouseClicked="#updateFournisseur" prefHeight="38.0" prefWidth="129.0" style="-fx-background-color: #26B99A;" text="Update Profile" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </JFXButton>
+                  <VBox layoutX="65.0" layoutY="480.0" spacing="10.0">
+                     <children>
+                        <VBox />
+                        <VBox />
+                        <VBox />
+                        <VBox />
+                     </children>
+                  </VBox>
+                  <JFXButton fx:id="deleteBtn" alignment="CENTER" layoutX="154.0" layoutY="527.0" onMouseClicked="#deleteProvider" prefHeight="38.0" prefWidth="129.0" style="-fx-background-color: #DD4B39;" text="Delete Profile" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </JFXButton>
+                  <Separator layoutX="27.0" layoutY="506.0" prefHeight="4.0" prefWidth="244.0" />
+                  <Label layoutX="18.0" layoutY="470.0" prefHeight="20.0" prefWidth="55.0" text="Cridé ;">
+                     <font>
+                        <Font name="Roboto Medium" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="cridé" layoutX="85.0" layoutY="466.0" prefHeight="29.0" prefWidth="75.0" textFill="#ff5151">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="cridé1" alignment="CENTER" layoutX="184.0" layoutY="466.0" prefHeight="29.0" prefWidth="75.0" text="DA" textFill="#ff5151">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="345.0" layoutY="13.0" prefHeight="579.0" prefWidth="270.0" style="-fx-background-color: white; -fx-background-radius: 3; -fx-border-color: #3C8DBC; -fx-border-radius: 3; -fx-border-width: 4 0 0 0; -fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5); -fx-padding: 4;">
+               <children>
+                  <Separator layoutX="13.0" layoutY="45.0" prefHeight="4.0" prefWidth="244.0" />
+                  <Label layoutX="14.0" layoutY="14.0" prefHeight="17.0" prefWidth="189.0" style="-fx-text-fill: #162E3B; -fx-font-size: 16; -fx-font-weight: bold; -fx-alignment: left;" text="About me" />
+                  <Separator layoutX="13.0" layoutY="154.0" prefHeight="4.0" prefWidth="244.0" />
+                  <Separator layoutX="14.0" layoutY="235.0" prefHeight="4.0" prefWidth="244.0" />
+                  <Label layoutX="13.0" layoutY="60.0" prefHeight="17.0" prefWidth="94.0" text="Category">
+                     <font>
+                        <Font name="Roboto Medium" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="13.0" layoutY="161.0" prefHeight="17.0" prefWidth="94.0" text="Location">
+                     <font>
+                        <Font name="Roboto Medium" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="nameCategory" layoutX="14.0" layoutY="87.0" prefHeight="54.0" prefWidth="244.0" wrapText="true">
+                     <font>
+                        <Font name="Roboto Light" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="location" layoutX="13.0" layoutY="188.0" prefHeight="31.0" prefWidth="244.0" wrapText="true">
+                     <font>
+                        <Font name="Roboto Light" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="13.0" layoutY="290.0" prefHeight="17.0" prefWidth="94.0" text="Notes :">
+                     <font>
+                        <Font name="Roboto Medium" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="note" layoutX="23.0" layoutY="333.0" prefHeight="150.0" prefWidth="235.0" wrapText="true">
+                     <font>
+                        <Font name="Roboto Light" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <TableView fx:id="tabView" layoutX="632.0" layoutY="72.0" onMouseClicked="#getDataFromTable" prefHeight="460.0" prefWidth="494.0">
+               <columns>
+                  <TableColumn fx:id="id" prefWidth="59.0" text="ID" />
+                  <TableColumn fx:id="firstnameT" prefWidth="125.0" text="Firstname" />
+                  <TableColumn fx:id="lastnameT" prefWidth="129.0" text="Lastname" />
+                  <TableColumn fx:id="categoryT" minWidth="0.0" prefWidth="180.0" text="Category" />
+                  <TableColumn fx:id="locationT" minWidth="0.0" prefWidth="0.0" visible="false" />
+                  <TableColumn fx:id="noteT" minWidth="0.0" prefWidth="0.0" visible="false" />
+                  <TableColumn fx:id="phoneT" minWidth="0.0" prefWidth="0.0" visible="false" />
+                  <TableColumn fx:id="emailT" minWidth="0.0" prefWidth="0.0" visible="false" />
+                  <TableColumn fx:id="cridéT" minWidth="0.0" prefWidth="0.0" visible="false" />
+               </columns>
+            </TableView>
+            <JFXTextField fx:id="search" labelFloat="true" layoutX="672.0" layoutY="24.0" onMouseClicked="#search" prefHeight="31.0" prefWidth="227.0" promptText="Search ..." style="-fx-prompt-text-fill: #999;">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXTextField>
+            <JFXButton alignment="CENTER" layoutX="974.0" layoutY="546.0" onMouseClicked="#addUpdateFournisseur" prefHeight="38.0" prefWidth="129.0" style="-fx-background-color: #00A65A;" text="Add New Profile" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton alignment="CENTER" layoutX="823.0" layoutY="546.0" onMouseClicked="#orderFournisseur" prefHeight="38.0" prefWidth="129.0" style="-fx-background-color: #3C8DBC;" text="Order" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" focusTraversable="false" layoutX="1056.0" layoutY="27.0" onMouseClicked="#refresh" text="Refresh">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

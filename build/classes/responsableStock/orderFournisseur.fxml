@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<StackPane fx:id="contactFourniseur" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="981.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="responsableStock.OrderFournisseurController">
+   <children>
+      <AnchorPane fx:id="orderPlatform" prefHeight="600.0" prefWidth="989.0" style="-fx-background-color: #fff;">
+         <children>
+            <JFXComboBox fx:id="comboProvider" focusColor="#db8d5c" labelFloat="true" layoutX="16.0" layoutY="117.0" onAction="#getCatgery" prefHeight="38.0" prefWidth="208.0" promptText="Provider" style="-fx-prompt-text-fill: #999; -fx-font-size: 17px; -fx-font-weight: bold;" />
+            <Text fill="#949494" layoutX="321.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add New Order">
+               <font>
+                  <Font name="System Bold" size="42.0" />
+               </font>
+            </Text>
+            <JFXComboBox fx:id="comboCategory" disable="true" focusColor="#db8d5c" labelFloat="true" layoutX="278.0" layoutY="117.0" onAction="#getProduct" prefHeight="38.0" prefWidth="208.0" promptText="Category" style="-fx-prompt-text-fill: #999; -fx-font-size: 17px; -fx-font-weight: bold;" />
+            <JFXComboBox fx:id="comboProduct" disable="true" focusColor="#db8d5c" labelFloat="true" layoutX="16.0" layoutY="199.0" prefHeight="38.0" prefWidth="208.0" promptText="Products" style="-fx-prompt-text-fill: #999; -fx-font-size: 17px; -fx-font-weight: bold;" />
+            <JFXButton fx:id="plusBtn" layoutX="513.0" layoutY="144.0" onMouseClicked="#plusBtn" style="-fx-background-color: #DB8D5C#DB8D5C;" text="+" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="38.0" />
+               </font>
+               <effect>
+                  <DropShadow height="32.86" radius="35.1425" spread="0.15" width="109.71" />
+               </effect>
+            </JFXButton>
+            <Line endX="-98.0" endY="400.0" layoutX="709.0" layoutY="136.0" startX="-100.0" />
+            <JFXTextField fx:id="quantity" disable="true" focusColor="#db8d5c" labelFloat="true" layoutX="278.0" layoutY="199.0" prefHeight="38.0" prefWidth="208.0" promptText="Quantity" style="-fx-prompt-text-fill: #999;">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </JFXTextField>
+            <Text fill="#757575" layoutX="637.0" layoutY="97.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Order liste :">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <JFXButton fx:id="addBtn" layoutX="420.0" layoutY="514.0" onMouseClicked="#addOrderBtn" prefHeight="38.0" prefWidth="154.0" style="-fx-background-color: #01A05E;" text="Add Order" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </JFXButton>
+            <Text fill="#757575" layoutX="26.0" layoutY="285.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Product liste :">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="150.0" fitWidth="194.0" layoutX="378.0" layoutY="311.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/Preloader.gif" />
+               </image>
+            </ImageView>
+            <VBox layoutX="627.0" layoutY="107.0" prefHeight="459.0" prefWidth="338.0" style="-fx-border-color: #000;">
+               <effect>
+                  <DropShadow height="0.0" radius="0.0" width="0.0" />
+               </effect>
+               <children>
+                  <ScrollPane fx:id="scroll" prefHeight="477.0" prefWidth="364.0">
+                     <content>
+                        <VBox fx:id="container" prefHeight="449.0" prefWidth="321.0" />
+                     </content>
+                  </ScrollPane>
+               </children>
+            </VBox>
+            <TextArea fx:id="listProduct" editable="false" layoutX="26.0" layoutY="300.0" prefHeight="269.0" prefWidth="271.0" style="-fx-text-fill: #999; -fx-background-color: #fff;">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </TextArea>
+            <Text fill="#616161" layoutX="15.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Proviser Name :">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Text fx:id="nameProvider" fill="#616161" layoutX="127.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0">
+               <font>
+                  <Font name="System Italic" size="14.0" />
+               </font>
+            </Text>
+         </children></AnchorPane>
+   </children>
+</StackPane>

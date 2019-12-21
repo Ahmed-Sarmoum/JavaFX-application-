@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="commandePlatform" prefHeight="600.0" prefWidth="645.0" style="-fx-background-color: #eee;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="responsableStock.CommandeController">
+   <children>
+      <ImageView fitHeight="277.0" fitWidth="212.0" layoutX="428.0" layoutY="103.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/3d-question-mark-icon-blue-color-picture-6.png" />
+         </image>
+      </ImageView>
+      <Pane fx:id="comand" layoutX="8.0" layoutY="21.0" prefHeight="572.0" prefWidth="452.0" style="-fx-border-color: #000; -fx-background-color: #fff;">
+         <children>
+            <Text layoutX="101.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SuperMarket  El Amir">
+               <font>
+                  <Font name="System Bold Italic" size="25.0" />
+               </font>
+            </Text>
+            <Text layoutX="15.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Provider Information :" />
+            <Separator layoutX="145.0" layoutY="85.0" prefHeight="3.0" prefWidth="80.0" />
+            <Text layoutX="35.0" layoutY="114.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Firstname :" />
+            <Text layoutX="34.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lastname :" />
+            <Text layoutX="34.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Category :" />
+            <Text layoutX="36.0" layoutY="193.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID :" />
+            <Text layoutX="16.0" layoutY="246.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Liste Products :" />
+            <Separator layoutX="105.0" layoutY="246.0" prefHeight="7.0" prefWidth="319.0" />
+            <Text layoutX="34.0" layoutY="217.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Previous Credit :" />
+            <Text fx:id="firstname" layoutX="129.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0">
+               <font>
+                  <Font name="System Italic" size="12.0" />
+               </font>
+            </Text>
+            <Text fx:id="lastname" layoutX="125.0" layoutY="140.0" strokeType="OUTSIDE" strokeWidth="0.0">
+               <font>
+                  <Font name="System Italic" size="12.0" />
+               </font>
+            </Text>
+            <Text fx:id="category" layoutX="127.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0">
+               <font>
+                  <Font name="System Italic" size="12.0" />
+               </font>
+            </Text>
+            <Text fx:id="id" layoutX="130.0" layoutY="193.0" strokeType="OUTSIDE" strokeWidth="0.0">
+               <font>
+                  <Font name="System Italic" size="12.0" />
+               </font>
+            </Text>
+            <Text fx:id="credit" layoutX="129.0" layoutY="218.0" strokeType="OUTSIDE" strokeWidth="0.0">
+               <font>
+                  <Font name="System Italic" size="12.0" />
+               </font>
+            </Text>
+            <Line endY="130.0" layoutX="226.0" layoutY="101.0" stroke="#a8a8a8" />
+            <TextArea fx:id="listProd" editable="false" focusTraversable="false" layoutX="56.0" layoutY="276.0" prefHeight="203.0" prefWidth="192.0" text="&#10;&#10;&#10;" />
+            <Text layoutX="265.0" layoutY="389.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total price :" />
+            <TextField editable="false" focusTraversable="false" layoutX="263.0" layoutY="404.0" prefHeight="43.0" prefWidth="170.0" text="                           DA">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </TextField>
+            <Separator layoutX="32.0" layoutY="488.0" prefHeight="0.0" prefWidth="400.0" />
+            <Text layoutX="35.0" layoutY="504.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SuperMarket Subscription" />
+            <Text layoutX="285.0" layoutY="503.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Provider Subscription" />
+            <Text layoutX="199.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Order">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+            <Text layoutX="265.0" layoutY="291.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date :" />
+            <Text fx:id="date" layoutX="319.0" layoutY="291.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+            <Text layoutX="267.0" layoutY="324.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Time :" />
+            <Text fx:id="time" layoutX="319.0" layoutY="324.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+            <Separator layoutX="263.0" layoutY="363.0" prefHeight="3.0" prefWidth="158.0" />
+            <Text layoutX="232.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SuperMarket Information :" />
+            <Separator layoutX="384.0" layoutY="84.0" prefHeight="3.0" prefWidth="54.0" />
+            <Text layoutX="247.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name :" />
+            <Text layoutX="248.0" layoutY="142.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone :" />
+            <Text layoutX="248.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fax :" />
+            <Text layoutX="313.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="El Amir">
+               <font>
+                  <Font name="System Italic" size="12.0" />
+               </font>
+            </Text>
+            <Text layoutX="313.0" layoutY="144.0" strokeType="OUTSIDE" strokeWidth="0.0" text="046851258">
+               <font>
+                  <Font name="System Italic" size="12.0" />
+               </font>
+            </Text>
+            <Text layoutX="314.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" text="044586525">
+               <font>
+                  <Font name="System Italic" size="12.0" />
+               </font>
+            </Text>
+            <Text layoutX="249.0" layoutY="193.0" strokeType="OUTSIDE" strokeWidth="0.0" text="E-Mail :" />
+            <Text layoutX="315.0" layoutY="193.0" strokeType="OUTSIDE" strokeWidth="0.0" text="elamir@gmail.com">
+               <font>
+                  <Font name="System Italic" size="12.0" />
+               </font>
+            </Text>
+            <Text layoutX="78.0" layoutY="269.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Product" />
+            <Text layoutX="157.0" layoutY="269.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quantity" />
+         </children>
+      </Pane>
+      <JFXButton layoutX="477.0" layoutY="521.0" onMouseClicked="#printFactur" prefHeight="45.0" prefWidth="148.0" style="-fx-background-color: #01A05E;" text="Print" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </JFXButton>
+      <Text layoutX="476.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Order form">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

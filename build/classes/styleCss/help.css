@@ -1,0 +1,4 @@
+.menu{
+    -fx-background-color:  #2A3F54;
+    -fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.8), 20, 0, 8,3.5); 
+}

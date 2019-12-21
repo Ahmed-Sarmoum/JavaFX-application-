@@ -1,0 +1,31 @@
+
+
+.logOut {
+    -fx-background-color:  #01A05E;
+    
+}
+.logOut:hover {
+    -fx-background-color:  #E61C69;
+    -fx-background-radius: 30px;
+    -fx-border-radius: 30px
+}
+.logOut:pressed{
+    -fx-background-color:  #eee;
+    -fx-background-radius: 30px;
+    -fx-border-radius: 30px
+}
+.HumbRotat:pressed{
+    -fx-cursor: hand;
+    -fx-rotate:21;
+}
+.jfx-hamburger StackPane{
+    -fx-background-color: #fff;
+}
+.menu:hover{
+    -fx-background-color: #01A05E;
+    
+    
+}
+.menu:pressed{
+    -fx-background-color: #fff
+}

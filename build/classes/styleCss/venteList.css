@@ -1,0 +1,23 @@
+.jfx-list-view .jfx-rippler{
+    -fx-rippler-fill:#ccc
+}
+
+.jfx-list-cell{
+    -fx-font-size: 18px
+}
+
+.jfx-list-cell:hover{
+    -fx-background-color: #3196AF;
+    -fx-font-size: 19px
+}
+
+/*.jfx-list-cell:selected{
+    -fx-background-color: #ccc
+}*/
+
+.jfx-list-view{
+    -fx-vertical-gap: 10;
+    -fx-pref-whidth: 150px;
+    -fx-background-insets: 1;
+    -fx-cell-vertical-margin: 10 0
+}

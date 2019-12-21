@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<StackPane fx:id="stackSales" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="660.0" prefWidth="1068.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="responsableComercial.SalesController">
+   <children>
+      <AnchorPane onMouseClicked="#refresh" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #fff;" stylesheets="@../styleCss/homeAdmin.css">
+         <children>
+            <Text fill="#404040" layoutX="38.0" layoutY="42.0" opacity="0.31" strokeType="OUTSIDE" strokeWidth="0.0" text="Sales Managment" wrappingWidth="287.748046875">
+               <font>
+                  <Font name="System Bold" size="33.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="302.0" fitWidth="299.0" layoutX="769.0" layoutY="361.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/egg-basket-22-01.jpg" />
+               </image>
+            </ImageView>
+            <TableView fx:id="tabView" layoutX="46.0" layoutY="110.0" prefHeight="545.0" prefWidth="769.0">
+              <columns>
+                <TableColumn fx:id="product" prefWidth="112.0" sortable="false" text="Product " />
+                <TableColumn fx:id="quantity" prefWidth="109.0" sortable="false" text="Quantity S.P" />
+                  <TableColumn fx:id="price" prefWidth="121.0" sortable="false" text="Price S.P (DA)" />
+                  <TableColumn fx:id="revenue" prefWidth="109.0" sortable="false" text="Revenue" />
+                  <TableColumn fx:id="dateS" prefWidth="159.0" sortable="false" text="Date Sellng" />
+                  <TableColumn fx:id="cashier" prefWidth="158.0" sortable="false" text="cashier" />
+              </columns>
+            </TableView>
+            <JFXTextField fx:id="search" alignment="CENTER" labelFloat="true" layoutX="335.0" layoutY="37.0" onMouseClicked="#search" prefHeight="38.0" prefWidth="192.0" promptText="Search ...">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </JFXTextField>
+            <Pane layoutX="828.0" layoutY="28.0" prefHeight="342.0" prefWidth="229.0" style="-fx-border-color: #000;">
+               <children>
+                  <JFXComboBox fx:id="prodCombo" labelFloat="true" layoutX="19.0" layoutY="107.0" onAction="#calculat" prefHeight="39.0" prefWidth="192.0" promptText="Prodects" style="-fx-font-size: 18px;">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXComboBox>
+                  <JFXComboBox fx:id="catégCombo" labelFloat="true" layoutX="19.0" layoutY="33.0" onAction="#shosedProdectFromCategory" prefHeight="39.0" prefWidth="192.0" promptText="Category" style="-fx-font-size: 18px;">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXComboBox>
+                  <JFXTextField fx:id="quantityS" alignment="CENTER" labelFloat="true" layoutX="14.0" layoutY="178.0" prefHeight="25.0" prefWidth="90.0" promptText="Q Selling" style="-fx-prompt-text-fill: #999;">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="priceS" alignment="CENTER" labelFloat="true" layoutX="132.0" layoutY="178.0" prefHeight="25.0" prefWidth="90.0" promptText="P Selling" style="-fx-prompt-text-fill: #999;">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="persontag" alignment="CENTER" labelFloat="true" layoutX="39.0" layoutY="244.0" prefHeight="31.0" prefWidth="163.0" promptText=".... %" style="-fx-prompt-text-fill: #999;">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </JFXTextField>
+                  <Separator layoutX="15.0" layoutY="296.0" prefWidth="200.0" style="-fx-text-fill: #aaa;" />
+                  <Text fill="#999999" layoutX="93.0" layoutY="324.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Filter">
+                     <font>
+                        <Font name="System Bold" size="23.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <JFXButton buttonType="RAISED" layoutX="740.0" layoutY="60.0" onMouseClicked="#refresh" text="Refresh" textFill="#727272">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

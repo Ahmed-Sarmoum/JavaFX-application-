@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<StackPane fx:id="message" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="604.0" prefWidth="1132.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="responsableStock.MessageController">
+   <children>
+      <HBox prefHeight="604.0" prefWidth="1136.0">
+         <children>
+            <AnchorPane id="AnchorPane" prefHeight="604.0" prefWidth="779.0">
+               <children>
+                  <Pane layoutX="32.0" layoutY="526.0" prefHeight="61.0" prefWidth="712.0" style="-fx-background-color: #fff; -fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5);" AnchorPane.rightAnchor="31.0">
+                     <children>
+                        <MaterialDesignIconView fill="#242a31" glyphName="SEND" layoutX="645.0" layoutY="46.0" onMouseClicked="#sendMessage" size="40">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </MaterialDesignIconView>
+                        <MaterialDesignIconView fill="#242a31" glyphName="PAPERCLIP" layoutX="68.0" layoutY="46.0" onMouseClicked="#fileChooser" rotate="45.0" size="40" text="" wrappingWidth="39.99999925031443">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </MaterialDesignIconView>
+                        <MaterialDesignIconView fill="#242a31" glyphName="IMAGE" layoutX="119.0" layoutY="46.0" onMouseClicked="#imageChooser" size="40" wrappingWidth="39.99999925031443">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </MaterialDesignIconView>
+                        <MaterialDesignIconView fill="#242a31" glyphName="CAMERA" layoutX="22.0" layoutY="46.0" size="40" wrappingWidth="39.99999925031443">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </MaterialDesignIconView>
+                        <JFXTextArea fx:id="msgEntred" layoutX="184.0" layoutY="5.0" prefHeight="46.0" prefWidth="403.0" promptText="Enter Your Text" wrapText="true">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </JFXTextArea>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="14.0" layoutY="18.0" prefHeight="493.0" prefWidth="752.0" style="-fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5); -fx-background-color: #fff;" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="18.0">
+                     <children>
+                        <ScrollPane fx:id="scrollPaneMessageBox" hbarPolicy="NEVER" layoutX="13.0" layoutY="59.0" prefHeight="422.0" prefWidth="732.0" vvalue="1.0" AnchorPane.bottomAnchor="3.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="-3.0" AnchorPane.topAnchor="3.0" VBox.vgrow="ALWAYS">
+                           <content>
+                              <VBox fx:id="messageBox" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="417.0" prefWidth="727.0" spacing="20.0" style="-fx-background-color: #e2e2e2;" styleClass="right-box-center">
+                                 <padding>
+                                    <Insets bottom="40.0" left="20.0" right="20.0" top="40.0" />
+                                 </padding>
+                              </VBox>
+                           </content>
+                        </ScrollPane>
+                        <MaterialDesignIconView fill="#242a31" glyphName="STAR" layoutX="508.0" layoutY="43.0" size="40">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </MaterialDesignIconView>
+                        <MaterialDesignIconView fill="#242a31" glyphName="PHONE" layoutX="592.0" layoutY="43.0" onMouseClicked="#getCont" size="40">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </MaterialDesignIconView>
+                        <Text fx:id="SendedName" fill="#797878" layoutX="56.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Text>
+                        <Label fx:id="typeUser" layoutX="293.0" layoutY="25.0" prefHeight="32.0" prefWidth="203.0" textFill="#949494" wrapText="true">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <MaterialDesignIconView fill="#242a31" glyphName="VIDEO" layoutX="678.0" layoutY="42.0" size="40">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </MaterialDesignIconView>
+                     </children>
+                  </Pane>
+               </children>
+            </AnchorPane>
+            <VBox prefHeight="660.0" prefWidth="356.0" styleClass="left-box" stylesheets="@../styleCss/chat.css">
+               <children>
+                  <HBox alignment="CENTER" minHeight="80.0" prefHeight="80.0" prefWidth="200.0">
+                     <children>
+                        <JFXTextField fx:id="searchMsg" onKeyReleased="#searchMsg" styleClass="search-field" stylesheets="@../styleCss/chat.css" />
+                     </children>
+                  </HBox>
+                  <Line endX="308.0" stroke="#363d45" strokeWidth="2.5" />
+                  <HBox prefHeight="89.0" prefWidth="311.0">
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="75.0" prefWidth="104.0" spacing="1.0" styleClass="type-contact">
+                           <children>
+                              <FontAwesomeIconView fill="#cccccc" glyphName="USER" size="33" />
+                           </children>
+                        </VBox>
+                        <Line startY="70.0" stroke="#363d45" />
+                        <VBox alignment="CENTER" prefHeight="75.0" prefWidth="104.0" spacing="1.0" styleClass="type-contact">
+                           <children>
+                              <FontAwesomeIconView fill="#cccccc" glyphName="GROUP" size="33" />
+                           </children>
+                        </VBox>
+                        <Line startY="70.0" stroke="#363d45" />
+                        <VBox alignment="CENTER" prefHeight="75.0" prefWidth="104.0" spacing="1.0" styleClass="type-contact">
+                           <children>
+                              <FontAwesomeIconView fill="#cccccc" glyphName="USER_PLUS" size="33" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <Line endX="308.0" stroke="#363d45" strokeWidth="2.5" />
+                  <AnchorPane prefHeight="491.0" prefWidth="280.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <ScrollPane fx:id="newContactBox" hbarPolicy="NEVER" layoutX="10.0" layoutY="10.0" prefHeight="504.0" prefWidth="377.0" styleClass="scroll-pane-contact" visible="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <content>
+                              <VBox fx:id="container" maxHeight="1.7976931348623157E308" minHeight="460.0" prefWidth="375.0" style="-fx-background-color: #242A31;">
+                                 <children>
+                                    <Line endX="300.0" nodeOrientation="LEFT_TO_RIGHT" stroke="#363d45" strokeWidth="2.5" />
+                                 </children>
+                              </VBox>
+                           </content>
+                        </ScrollPane>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</StackPane>

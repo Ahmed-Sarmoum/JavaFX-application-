@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="ventPlatform" prefHeight="595.0" prefWidth="874.0" style="-fx-border-color: #3196AF; -fx-border-width: 2px; -fx-background-color: #fff;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="caissiers.VentPlatformController">
+   <children>
+      <ImageView fitHeight="215.0" fitWidth="238.0" layoutX="630.0" layoutY="375.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/egg-basket-22-01.jpg" />
+         </image>
+      </ImageView>
+      <Text fx:id="nameCateg" fill="#6b6b6b" layoutX="14.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="262.0">
+         <font>
+            <Font name="System Bold" size="35.0" />
+         </font>
+      </Text>
+      <Text layoutX="616.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="List Products :">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <JFXListView fx:id="listProdect" depth="1" layoutX="34.0" layoutY="173.0" onMouseClicked="#toggel" prefHeight="395.0" prefWidth="326.0" stylesheets="@../styleCss/venteList.css" verticalGap="10.0">
+         <effect>
+            <DropShadow height="84.75" radius="26.677500000000002" spread="0.3" width="23.96" />
+         </effect>
+      </JFXListView>
+      <Label fx:id="quantP" alignment="CENTER" layoutX="185.0" layoutY="117.0" prefHeight="32.0" prefWidth="102.0" textAlignment="CENTER" textFill="#8a8888">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Text layoutX="34.0" layoutY="134.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quantity in rayon :">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <JFXTextField fx:id="quantity" alignment="CENTER" focusColor="#3196af" labelFloat="true" layoutX="413.0" layoutY="109.0" prefHeight="51.0" prefWidth="102.0" promptText="Quantity" style="-fx-prompt-text-fill: #bbb;" unFocusColor="#3196af">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="price" alignment="CENTER" editable="false" focusColor="#3196af" labelFloat="true" layoutX="368.0" layoutY="22.0" prefHeight="51.0" prefWidth="192.0" promptText="Price" style="-fx-prompt-text-fill: #bbb;" unFocusColor="#3196af">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </JFXTextField>
+      <Label fx:id="total" alignment="CENTER" layoutX="379.0" layoutY="208.0" prefHeight="51.0" prefWidth="156.0" text="0.0" textFill="#3c3c3c">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <JFXButton buttonType="RAISED" layoutX="383.0" layoutY="338.0" onMouseClicked="#plus" prefHeight="47.0" prefWidth="122.0" style="-fx-background-color: #187CB8;" text="Plus" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="validate" buttonType="RAISED" layoutX="383.0" layoutY="425.0" onMouseClicked="#validate" prefHeight="47.0" prefWidth="122.0" style="-fx-background-color: rgb(17, 158, 132);" text="Validate" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="383.0" layoutY="514.0" onMouseClicked="#reset" prefHeight="47.0" prefWidth="122.0" style="-fx-background-color: #E9AB44;" text="Remise a 0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <Text fill="#666666" layoutX="542.0" layoutY="243.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DA">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Text>
+      <TextArea fx:id="listProd" editable="false" layoutX="616.0" layoutY="82.0" prefHeight="304.0" prefWidth="238.0">
+         <font>
+            <Font size="16.0" />
+         </font></TextArea>
+      <Text layoutX="623.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NameP :" />
+      <Text layoutX="704.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quanty :" />
+      <Text layoutX="784.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Price :" />
+   </children>
+</AnchorPane>

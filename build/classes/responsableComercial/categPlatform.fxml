@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.net.URL?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<StackPane fx:id="stackCateg" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="660.0" prefWidth="1068.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="responsableComercial.CategPlatformController">
+   <children>
+      <AnchorPane id="AnchorPane" prefHeight="660.0" prefWidth="1068.0" styleClass="mainFxmlClass">
+         <stylesheets>
+            <URL value="@categPlatform.css" />
+         </stylesheets>
+         <children>
+            <TableView fx:id="tabV" layoutX="29.0" layoutY="107.0" opacity="0.94" prefHeight="461.0" prefWidth="511.0" stylesheets="@../styleCss/homeAdmin.css">
+               <columns>
+                  <TableColumn fx:id="idC" prefWidth="75.0" text="ID" />
+                  <TableColumn fx:id="nameC" prefWidth="149.0" text="Category Name" />
+                  <TableColumn fx:id="statusC" minWidth="0.0" prefWidth="108.0" text="Status" />
+                  <TableColumn fx:id="chefC" prefWidth="171.0" text="Chef Section " />
+               </columns>
+            </TableView>
+            <Text fill="#404040" layoutX="258.0" layoutY="45.0" opacity="0.31" strokeType="OUTSIDE" strokeWidth="0.0" text="Category And Rayon Managment">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Text>
+            <TableView fx:id="tabV1" layoutX="608.0" layoutY="107.0" opacity="0.94" prefHeight="461.0" prefWidth="439.0" stylesheets="@../styleCss/homeAdmin.css">
+               <columns>
+                  <TableColumn fx:id="idR" prefWidth="92.0" text="ID" />
+                  <TableColumn fx:id="nameR" prefWidth="140.0" text="Rayon Name" />
+                  <TableColumn fx:id="nameRes" prefWidth="205.0" text="Name Responsible" />
+               </columns>
+            </TableView>
+            <JFXButton layoutX="29.0" layoutY="583.0" onAction="#addCategoryBtn" prefHeight="37.0" prefWidth="130.0" style="-fx-background-color: rgb(17, 158, 132);" text="Add Category" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="166.0" layoutY="583.0" onAction="#deleteCategory" prefHeight="37.0" prefWidth="130.0" style="-fx-background-color: rgb(170, 50, 100);" text="Delete Category" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="303.0" layoutY="583.0" onAction="#UpdateCategoryBtn" prefHeight="37.0" prefWidth="130.0" style="-fx-background-color: #16669B;" text="Update Category" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="839.0" layoutY="583.0" onAction="#addRayonBtn" prefHeight="37.0" prefWidth="100.0" style="-fx-background-color: rgb(17, 158, 132);" text="Add Rayon" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="947.0" layoutY="583.0" onAction="#deleteRayon" prefHeight="37.0" prefWidth="100.0" style="-fx-background-color: rgb(170, 50, 100);" text="Delete Rayon" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="refresh" buttonType="RAISED" layoutX="527.0" layoutY="61.0" onAction="#refresh" prefHeight="37.0" prefWidth="100.0" text="Refresh">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

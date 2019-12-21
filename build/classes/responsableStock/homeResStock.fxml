@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="667.0" prefWidth="1132.0" stylesheets="@../styleCss/resStock.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="responsableStock.HomeResStockController">
+   <children>
+      <AnchorPane prefHeight="667.0" prefWidth="1083.0" style="-fx-background-color: #eee;">
+         <children>
+            <Pane layoutX="59.0" layoutY="7.0" prefHeight="66.0" prefWidth="1019.0" style="-fx-background-color: #4A4B4D;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Text fill="WHITE" layoutX="289.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SuperMarket El Amir" wrappingWidth="433.88283559679985">
+                     <font>
+                        <Font name="System Bold Italic" size="39.0" />
+                     </font>
+                  </Text>
+                  <HBox layoutX="847.0" layoutY="3.0" prefHeight="55.0" prefWidth="271.0" style="-fx-background-color: #4A4B4D;" stylesheets="@../styleCss/homeResCommercial.css">
+                     <children>
+                        <Circle fx:id="imgUser" fill="WHITE" radius="24.0" stroke="BLACK" strokeType="INSIDE">
+                           <HBox.margin>
+                              <Insets top="5.0" />
+                           </HBox.margin>
+                        </Circle>
+                        <Text fx:id="flname2" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="SARMOUM Ahmed">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="25.0" top="15.0" />
+                           </HBox.margin>
+                        </Text>
+                     </children>
+                  </HBox>
+                  <JFXHamburger fx:id="menu" layoutX="14.0" layoutY="14.0" onMouseClicked="#drawe" prefHeight="39.0" prefWidth="59.0" styleClass="HumbRotat" />
+                  <Text fill="WHITE" layoutX="74.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MENU" wrappingWidth="123.88283559679985">
+                     <font>
+                        <Font name="System Bold Italic" size="31.0" />
+                     </font>
+                  </Text>
+                  <Pane fx:id="updatePopUpPane" layoutX="-389.0" layoutY="161.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="117.0" prefWidth="199.0" style="-fx-background-color: #4A4B4D;">
+                     <children>
+                        <JFXButton focusTraversable="false" layoutX="1.0" layoutY="3.0" onMouseClicked="#addGeneralQuantity" prefHeight="55.0" prefWidth="199.0" ripplerFill="WHITE" styleClass="menu" text="General Quantity" textFill="WHITE">
+                           <font>
+                              <Font name="Cambria" size="19.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton focusTraversable="false" layoutX="1.0" layoutY="59.0" onMouseClicked="#addQuantity" prefHeight="55.0" prefWidth="199.0" ripplerFill="WHITE" styleClass="menu" text="Quantity" textFill="WHITE">
+                           <font>
+                              <Font name="Cambria" size="19.0" />
+                           </font>
+                           <padding>
+                              <Insets left="-61.0" />
+                           </padding>
+                        </JFXButton>
+                     </children>
+                  </Pane>
+                  <FontAwesomeIconView fx:id="riningIcon" fill="WHITE" glyphName="BELL" layoutX="760.0" layoutY="44.0" size="3em" styleClass="hand" />
+               </children>
+            </Pane>
+            <StackPane fx:id="rootPane" layoutX="-1.0" layoutY="64.0" prefHeight="604.0" prefWidth="1132.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="63.0">
+               <children>
+                  <AnchorPane fx:id="swichPane" prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Pane fx:id="popUpPane" layoutX="-550.0" layoutY="-77.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="604.0" prefWidth="286.0" style="-fx-background-color: #4A4B4D;">
+                           <children>
+                              <HBox fx:id="boxPopUpMenusHolder1" alignment="TOP_CENTER" layoutX="11.0" layoutY="1.0" prefHeight="170.0" prefWidth="265.0">
+                                 <children>
+                                    <Circle fx:id="imgUser1" fill="WHITE" radius="81.0" stroke="BLACK" strokeType="INSIDE" />
+                                 </children>
+                              </HBox>
+                              <JFXButton focusTraversable="false" layoutX="1.0" layoutY="178.0" onMouseClicked="#home" prefHeight="50.0" prefWidth="285.0" ripplerFill="WHITE" styleClass="menu" stylesheets="@../styleCss/resStock.css" text="Home" textFill="WHITE">
+                                 <font>
+                                    <Font name="Cambria" size="19.0" />
+                                 </font>
+                              </JFXButton>
+                              <JFXButton focusTraversable="false" layoutX="1.0" layoutY="482.0" onMouseClicked="#exit" prefHeight="50.0" prefWidth="285.0" ripplerFill="WHITE" styleClass="menu" stylesheets="@../styleCss/resStock.css" text="Exit" textFill="WHITE">
+                                 <font>
+                                    <Font name="Cambria" size="19.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets left="-18.0" />
+                                 </padding>
+                              </JFXButton>
+                              <JFXButton focusTraversable="false" layoutX="1.0" layoutY="229.0" onMouseClicked="#draweList" prefHeight="50.0" prefWidth="285.0" ripplerFill="WHITE" styleClass="menu" stylesheets="@../styleCss/resStock.css" text="Add Quantity" textFill="WHITE">
+                                 <font>
+                                    <Font name="Cambria" size="19.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets left="55.0" />
+                                 </padding>
+                              </JFXButton>
+                              <MaterialDesignIconView fill="WHITE" glyphName="HOME" layoutX="43.0" layoutY="214.0" size="26" />
+                              <FontAwesomeIconView fill="WHITE" glyphName="ASTERISK" layoutX="42.0" layoutY="515.0" size="26" text="" wrappingWidth="22.28574377298355" />
+                              <JFXButton focusTraversable="false" layoutX="1.0" layoutY="280.0" onMouseClicked="#listeProduct" prefHeight="50.0" prefWidth="285.0" ripplerFill="WHITE" styleClass="menu" stylesheets="@../styleCss/resStock.css" text="Liste Product" textFill="WHITE">
+                                 <font>
+                                    <Font name="Cambria" size="19.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets left="60.0" />
+                                 </padding>
+                              </JFXButton>
+                              <FontAwesomeIconView fill="WHITE" glyphName="PENCIL_SQUARE_ALT" layoutX="43.0" layoutY="261.0" size="26" text="" wrappingWidth="21.571428298950195" />
+                              <JFXButton focusTraversable="false" layoutX="2.0" layoutY="331.0" onMouseClicked="#Statistic" prefHeight="50.0" prefWidth="285.0" ripplerFill="WHITE" styleClass="menu" stylesheets="@../styleCss/resStock.css" text="Statistic Quantity" textFill="WHITE">
+                                 <font>
+                                    <Font name="Cambria" size="19.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets left="85.0" />
+                                 </padding>
+                              </JFXButton>
+                              <FontAwesomeIconView fill="WHITE" glyphName="LIST_UL" layoutX="43.0" layoutY="314.0" size="26" />
+                              <FontAwesomeIconView fill="WHITE" glyphName="SUITCASE" layoutX="43.0" layoutY="366.0" size="26.0" wrappingWidth="22.000009685754776" />
+                              <Separator layoutX="25.0" layoutY="559.0" opacity="0.65" prefHeight="5.0" prefWidth="247.0" />
+                              <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="30.0" layoutY="570.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/facebook.png" />
+                                 </image>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </ImageView>
+                              <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="101.0" layoutY="570.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/github.png" />
+                                 </image>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </ImageView>
+                              <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="165.0" layoutY="570.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/linkedin.png" />
+                                 </image>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </ImageView>
+                              <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="229.0" layoutY="569.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/youtube.png" />
+                                 </image>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </ImageView>
+                              <JFXButton focusTraversable="false" layoutY="381.0" onMouseClicked="#Fournisseur" prefHeight="50.0" prefWidth="285.0" ripplerFill="WHITE" styleClass="menu" stylesheets="@../styleCss/resStock.css" text="Providers" textFill="WHITE">
+                                 <font>
+                                    <Font name="Cambria" size="19.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets left="38.0" />
+                                 </padding>
+                              </JFXButton>
+                              <MaterialDesignIconView fill="WHITE" glyphName="SHOPPING" layoutX="43.0" layoutY="416.0" size="26" wrappingWidth="22.000005185604095" />
+                              <JFXButton focusTraversable="false" layoutX="2.0" layoutY="431.0" onMouseClicked="#Message" prefHeight="50.0" prefWidth="285.0" ripplerFill="WHITE" styleClass="menu" stylesheets="@../styleCss/resStock.css" text="Message" textFill="WHITE">
+                                 <font>
+                                    <Font name="Cambria" size="19.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets left="14.0" />
+                                 </padding>
+                              </JFXButton>
+                              <MaterialDesignIconView fill="WHITE" glyphName="SHOPPING" layoutX="43.0" layoutY="465.0" size="26" wrappingWidth="22.000005185604095" />
+                           </children>
+                        </Pane>
+                     </children>
+                  </AnchorPane>
+               </children></StackPane>
+         </children></AnchorPane>
+   </children>
+</StackPane>

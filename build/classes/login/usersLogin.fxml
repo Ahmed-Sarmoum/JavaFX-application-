@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox fx:id="adminLogin" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="489.0" prefWidth="348.0" stylesheets="@../styleCss/login.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="login.UsersLoginController">
+   <children>
+      <VBox alignment="CENTER" prefHeight="196.0" prefWidth="348.0" style="-fx-background-color: rgb(140, 69, 172);">
+         <children>
+            <Circle fx:id="imgUser" fill="WHITE" radius="68.0" stroke="#837777" strokeType="INSIDE" strokeWidth="7.0">
+               <VBox.margin>
+                  <Insets top="7.0" />
+               </VBox.margin>
+            </Circle>
+            <Text fx:id="typetxt" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="346.208984375">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </Text>
+         </children>
+      </VBox>
+      <JFXTextField fx:id="txtusername" alignment="CENTER" focusColor="#903faf" labelFloat="true" onKeyReleased="#filterImage" prefHeight="42.0" prefWidth="348.0" promptText="Username" style="-fx-prompt-text-fill: #bbb;" unFocusColor="RED">
+         <VBox.margin>
+            <Insets left="80.0" right="80.0" top="30.0" />
+         </VBox.margin>
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </JFXTextField>
+      <JFXPasswordField fx:id="txtpassword" alignment="CENTER" focusColor="#903faf" labelFloat="true" onKeyReleased="#filterImage" prefHeight="42.0" prefWidth="348.0" promptText="Password" style="-fx-prompt-text-fill: #bbb;" unFocusColor="RED">
+         <VBox.margin>
+            <Insets left="80.0" right="80.0" top="30.0" />
+         </VBox.margin>
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </JFXPasswordField>
+      <Pane fx:id="showSnak" prefHeight="73.0" prefWidth="348.0" />
+      <Separator opacity="0.29" prefHeight="0.0" prefWidth="348.0" style="-fx-background-color: #000;" />
+      <JFXButton fx:id="btnLogin" alignment="CENTER" cache="true" focusTraversable="false" onMouseClicked="#login" prefHeight="44.0" prefWidth="161.0" ripplerFill="#f5f2f2" style="-fx-background-color: rgb(140, 69, 172); -fx-background-radius: 20;" text="Login" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <VBox.margin>
+            <Insets left="97.0" top="15.0" />
+         </VBox.margin>
+      </JFXButton>
+   </children>
+</VBox>

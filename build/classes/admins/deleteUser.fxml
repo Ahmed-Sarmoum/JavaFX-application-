@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="deleteUserPlatform" prefHeight="97.0" prefWidth="124.0" style="-fx-background-color: #aaa;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="admins.DeleteUserController">
+   <children>
+      <JFXButton fx:id="ref" buttonType="RAISED" layoutX="26.0" layoutY="2.0" onAction="#delete" prefHeight="57.0" prefWidth="124.0" ripplerFill="#f86b6b" style="-fx-background-color: #B5305F;" text="Delete" textFill="WHITE" AnchorPane.bottomAnchor="56.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="ref1" buttonType="RAISED" layoutY="56.0" onAction="#Update" prefHeight="57.0" prefWidth="124.0" ripplerFill="#f86b6b" style="-fx-background-color: #01A05E;" text="Update" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </JFXButton>
+   </children>
+   <effect>
+      <Lighting diffuseConstant="1.3" specularExponent="21.86" surfaceScale="2.43">
+         <bumpInput>
+            <Shadow height="41.76" radius="16.6725" width="26.93" />
+         </bumpInput>
+         <light>
+            <Light.Distant />
+         </light>
+      </Lighting>
+   </effect>
+</AnchorPane>
