@@ -1,6 +1,6 @@
 # pfeProject
-# Super Market Project 
-# The interfaces are programmed with javaFX
+Super Market Project,
+ The interfaces are programmed with javaFX
 # Login 
 ![alt text](https://github.com/Ahmed-dev-vpc/pfeProject/blob/master/projectImages/log4.png?raw=true)
 # Stock
