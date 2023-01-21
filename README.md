@@ -1,4 +1,4 @@
-# pfeProject
+# JavaFX application 
 Super Market Project,
  The interfaces are programmed with javaFX
 # Login 
